@@ -58,11 +58,13 @@
               gnumake
 
               # Simulation
+              ghdl-bin
               iverilog
               verilator
 
               # Waveform viewing
               gtkwave
+              surfer
 
               # FPGA prototyping
               #yosys # already in LibreLane
