@@ -1,3 +1,7 @@
+# Ignore Sigasi
+**/.sigasi
+project.sigasi
+
 # Generated file formats
 __pycache__/
 *.pyc
