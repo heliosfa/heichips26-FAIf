@@ -5,19 +5,23 @@
 
 `default_nettype none
 
-module heichips26_digital_project (
+module heichips26_FAIf (
 `ifdef USE_POWER_PINS
     inout  wire VPWR,
     inout  wire VGND,
 `endif
-    input  wire [7:0] ui_in,    // Dedicated inputs
-    output wire [7:0] uo_out,   // Dedicated outputs
-    input  wire [7:0] uio_in,   // IOs: Input path
-    output wire [7:0] uio_out,  // IOs: Output path
-    output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
-    input  wire       ena,      // always 1 when the design is powered, so you can ignore it
-    input  wire       clk,      // clock
-    input  wire       rst_n     // reset_n - low to reset
+    
+    input  logic [7:0] ui_in,    // Dedicated inputs
+    output logic [7:0] uo_out,   // Dedicated outputs
+    input  logic [7:0] uio_in,   // IOs: Input path
+    output logic [7:0] uio_out,  // IOs: Output path
+    output logic [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
+    input  logic       ena,      // always 1 when the design is powered, so you can ignore it
+    input  logic       clk,      // clock
+    input  logic       rst_n,     // reset_n - low to reset
+
+    // Analogue dedicated outputs
+    output wire analog_0, analog_1, analog_2
 );
 
     // List all unused inputs to prevent warnings
