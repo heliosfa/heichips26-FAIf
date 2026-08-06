@@ -77,7 +77,7 @@
  <edit-inst-columns>1</edit-inst-columns>
  <edit-inst-lib-name>SG13_dev</edit-inst-lib-name>
  <edit-inst-mirror>false</edit-inst-mirror>
- <edit-inst-pcell-parameters>!</edit-inst-pcell-parameters>
+ <edit-inst-pcell-parameters/>
  <edit-inst-place-origin>false</edit-inst-place-origin>
  <edit-inst-row_x>0</edit-inst-row_x>
  <edit-inst-row_y>0</edit-inst-row_y>
@@ -93,8 +93,8 @@
  <edit-pcell-lazy-eval-mode>-1</edit-pcell-lazy-eval-mode>
  <edit-pcell-show-parameter-names>false</edit-pcell-show-parameter-names>
  <edit-recent-inst-param>SG13_dev,pmosHV,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ntap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ptap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,nmos,'0',false,'1',false,'1','0','0','1','0','0','!',</edit-recent-inst-param>
- <edit-recent-path-param>'8/0','0.2',flush,'0.0','0.0',</edit-recent-path-param>
- <edit-recent-shape-param>'1/0',;'8/0',</edit-recent-shape-param>
+ <edit-recent-path-param>'10/0','0.2',flush,'0.0','0.0',;'8/0','0.2',flush,'0.0','0.0',</edit-recent-path-param>
+ <edit-recent-shape-param>'8/0',;'44/0',;'1/0',</edit-recent-shape-param>
  <edit-show-shapes-of-instances>true</edit-show-shapes-of-instances>
  <edit-snap-objects-to-grid>true</edit-snap-objects-to-grid>
  <edit-snap-to-objects>true</edit-snap-to-objects>
@@ -250,7 +250,7 @@ sg13cmos5l_menu.macro_in_menu_sg13cmos5l_lvs_options:F12;
  <menu-items-hidden/>
  <min-inst-label-size>16</min-inst-label-size>
  <mouse-wheel-mode>0</mouse-wheel-mode>
- <mru>'/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_flattened_ver_2.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp.orig.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/down_digital_translator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/magic_happy.gds'@'sg13cmos5l'</mru>
+ <mru>'/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_flattened_ver_2.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp.orig.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/down_digital_translator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/magic_happy.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/comparator/layout/555_comparator.gds'@'sg13cmos5l'</mru>
  <mru-bookmarks/>
  <mru-layer-properties/>
  <mru-sessions/>
@@ -279,10 +279,10 @@ sg13cmos5l_menu.macro_in_menu_sg13cmos5l_lvs_options:F12;
  <rdb-marker-line-width>3</rdb-marker-line-width>
  <rdb-marker-vertex-size>-1</rdb-marker-vertex-size>
  <rdb-max-marker-count>1000</rdb-max-marker-count>
- <rdb-tree-state/>
+ <rdb-tree-state>-by-cell,-by-category</rdb-tree-state>
  <rdb-window-dim>1.0</rdb-window-dim>
  <rdb-window-mode>fit-marker</rdb-window-mode>
- <rdb-window-state-v2/>
+ <rdb-window-state-v2>MarkerBrowserDialog="AdnQywADAAAAAAUAAAAAAAAAB8sAAAKdAAAFAAAAAAAAAAfLAAACnQAAAAEAAAAAB4AAAAUAAAAAAAAAB8sAAAKd";splitter_2="AAAA/wAAAAEAAAACAAABAAAAAQYB/////wEAAAABAA==";splitter="AAAA/wAAAAEAAAACAAAA/gAAAQAB/////wEAAAACAA==";markers_list="AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEAAQAAAAAAAAAAAAAAAGQAAAAYAAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAa8AAAACAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA6gAAAAEAAAAAAAAAxQAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";</rdb-window-state-v2>
  <reader-options-show-always>false</reader-options-show-always>
  <ruler-color>#ff8000</ruler-color>
  <ruler-grid-snap>true</ruler-grid-snap>
