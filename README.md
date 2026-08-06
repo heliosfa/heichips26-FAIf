@@ -1,6 +1,88 @@
-# HeiChips 2026 Hackathon Template
+# HeiChips 2026 FABulous Analogue Interface 
 
-This repository is the submission template for the HeiChips 2026 Hackathon.
+This repository is the fork of the HeiChips 2026 submission template for the analogue peripherals project at the HeiChips 2026 Hackathon.
+
+This project is implemented as a digital-on-top design with the following peripherals:
+* 16-bit DAC
+* 16-bit ADC
+* DDS
+
+The project makes use of three dedicated analogue pins and uses the small tile size.
+
+## Pinout:
+
+Preliminary pinout for the FPGA interface:
+
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table class="tg"><thead>
+        <tr>
+          <th class="tg-c3ow">I/O Block</th>
+          <th class="tg-c3ow" colspan="8">Pinout</th>
+        </tr></thead>
+      <tbody>
+        <tr>
+          <td class="tg-0pky"></td>
+          <td class="tg-c3ow">7</td>
+          <td class="tg-c3ow">6</td>
+          <td class="tg-c3ow">5</td>
+          <td class="tg-c3ow">4</td>
+          <td class="tg-c3ow">3</td>
+          <td class="tg-c3ow">2</td>
+          <td class="tg-c3ow">1</td>
+          <td class="tg-c3ow">0</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">ui_in</td>
+          <td class="tg-c3ow" colspan="8">DAC Output</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">uio_in</td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky">ADC<br>Rst</td>
+          <td class="tg-0pky">ADC<br>Start</td>
+          <td class="tg-0pky">DAC <br>Load</td>
+          <td class="tg-0pky">DAC<br>H/L</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">uo_out</td>
+          <td class="tg-c3ow" colspan="8">ADC MSB</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">uio_out</td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky"></td>
+          <td class="tg-0pky">ADC<br>End</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">uio_oe</td>
+          <td class="tg-c3ow" colspan="8">ADC LSB</td>
+        </tr>
+      </tbody></table>
+    </div>
+  </foreignObject>
+</svg>
+
+We also use three dedicated analogue pins:
+
+| Pin | Function |
+| --- | -------- |
+|  0  | ADC In   |
+|  1  | DAC Out  |
+|  2  | ?        |
+
+
+## Rest of the README
+The rest of this README is the default HeiChips/heichips26-template/README.md
 
 Please implement your group project based on this template and notify us once you are done, so we can integrate your macro into the chip for tapeout. See [Submission](#submission).
 
@@ -126,8 +208,8 @@ You can also run the precheck locally using: `make precheck`.
 
 Here's an additional checklist:
 
-- [ ] The project top-level has a unique name starting with `heichips26_`.
-- [ ] One of the available slot sizes is used (tiny, small or large).
+- [X] The project top-level has a unique name starting with `heichips26_`.
+- [X] One of the available slot sizes is used (tiny, small or large).
 - [ ] `TopMetal1` in the macro is empty. This is required for the integration.
 - [ ] The design has been verified in simulation.
 - [ ] The macro is DRC clean.
