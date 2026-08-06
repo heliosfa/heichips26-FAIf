@@ -16,28 +16,28 @@ entity dac_reg is
       dac_sel      : in  std_logic;
       dac_load     : in  std_logic;
 
-      dac_out      : out std_logic_vector(15 downto 0); -- 16-bit output
+      dac_out      : out std_logic_vector(15 downto 0) -- 16-bit output
     );
 end entity dac_reg;
 
 architecture rtl of dac_reg is
 
-    signal dac_reg    : std_logic_vector(15 downto 0);
+    signal dac_rg     : std_logic_vector(15 downto 0);
     signal dac_lsb    : std_logic_vector(7 downto 0);
 
 begin
 
-  dac_out <= dac_reg;
+  dac_out <= dac_rg;
 
   REGOUT : process (reset_n, clk) begin
     if reset_n = '0' then
       -- async reset, active low
-      dac_reg <= (others => '0');
+      dac_rg <= (others => '0');
       dac_lsb <= (others => '0');
     elsif rising_edge(clk) then
         if dac_load = '1' then
           if dac_sel = '1' then
-            dac_reg <= dac_in & dac_lsb;
+            dac_rg <= dac_in & dac_lsb;
           else
             dac_lsb <= dac_in;
           end if;
