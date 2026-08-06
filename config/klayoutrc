@@ -71,7 +71,7 @@
  <edit-hier-copy-mode>-1</edit-hier-copy-mode>
  <edit-inst-angle>0</edit-inst-angle>
  <edit-inst-array>false</edit-inst-array>
- <edit-inst-cell-name>via_stack</edit-inst-cell-name>
+ <edit-inst-cell-name>cap_cmomi</edit-inst-cell-name>
  <edit-inst-column_x>0</edit-inst-column_x>
  <edit-inst-column_y>0</edit-inst-column_y>
  <edit-inst-columns>1</edit-inst-columns>
@@ -92,16 +92,16 @@
  <edit-path-width>0.6</edit-path-width>
  <edit-pcell-lazy-eval-mode>-1</edit-pcell-lazy-eval-mode>
  <edit-pcell-show-parameter-names>false</edit-pcell-show-parameter-names>
- <edit-recent-inst-param>SG13_dev,via_stack,'0',false,'1',false,'1','0','0','1','0','0','!b_layer:\'Metal2\';t_layer:\'Metal3\';vn_columns:#3;vn_rows:#3;vt1_columns:#1;vt1_rows:#1;',;SG13_dev,cap_cmomi,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,pmosHV,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ntap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ptap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,nmos,'0',false,'1',false,'1','0','0','1','0','0','!',</edit-recent-inst-param>
+ <edit-recent-inst-param>SG13_dev,cap_cmomi,'0',false,'1',false,'1','0','0','1','0','0','',;SG13_dev,via_stack,'0',false,'1',false,'1','0','0','1','0','0','!b_layer:\'Metal2\';t_layer:\'Metal3\';vn_columns:#3;vn_rows:#3;vt1_columns:#1;vt1_rows:#1;',;SG13_dev,cap_cmomi,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,pmosHV,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ntap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,ptap1,'0',false,'1',false,'1','0','0','1','0','0','!',;SG13_dev,nmos,'0',false,'1',false,'1','0','0','1','0','0','!',</edit-recent-inst-param>
  <edit-recent-path-param>'30/0','0.6',flush,'0.0','0.0',;'10/0','0.2',flush,'0.0','0.0',;'8/0','0.2',flush,'0.0','0.0',</edit-recent-path-param>
- <edit-recent-shape-param>'30/2',;'30/0',;'10/0',;'8/0',;'44/0',;'1/0',</edit-recent-shape-param>
- <edit-recent-text-param>'30/25',OOA,'0',center,center,</edit-recent-text-param>
+ <edit-recent-shape-param>'5/0',;'30/2',;'30/0',;'10/0',;'8/0',;'44/0',;'1/0',</edit-recent-shape-param>
+ <edit-recent-text-param>'30/25',ODACOUT,'0',center,center,;'30/25',OOA,'0',center,center,</edit-recent-text-param>
  <edit-show-shapes-of-instances>true</edit-show-shapes-of-instances>
  <edit-snap-objects-to-grid>true</edit-snap-objects-to-grid>
  <edit-snap-to-objects>true</edit-snap-to-objects>
  <edit-text-halign>center</edit-text-halign>
  <edit-text-size>0</edit-text-size>
- <edit-text-string>OOA</edit-text-string>
+ <edit-text-string>ODACOUT</edit-text-string>
  <edit-text-valign>center</edit-text-valign>
  <edit-top-level-selection>true</edit-top-level-selection>
  <empty-cell-dimension>4</empty-cell-dimension>
@@ -125,7 +125,7 @@
  <guiding-shape-line-width>1</guiding-shape-line-width>
  <guiding-shape-vertex-size>5</guiding-shape-vertex-size>
  <guiding-shape-visible>true</guiding-shape-visible>
- <hide-empty-layers>false</hide-empty-layers>
+ <hide-empty-layers>true</hide-empty-layers>
  <highres-mode>false</highres-mode>
  <image-cache-size>1</image-cache-size>
  <images-visible>true</images-visible>
@@ -251,7 +251,7 @@ sg13cmos5l_menu.macro_in_menu_sg13cmos5l_lvs_options:F12;
  <menu-items-hidden/>
  <min-inst-label-size>16</min-inst-label-size>
  <mouse-wheel-mode>0</mouse-wheel-mode>
- <mru>'/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_flattened_ver_2.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp.orig.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/down_digital_translator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/magic_happy.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/comparator/layout/555_comparator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_ver_2.gds'@'sg13cmos5l'</mru>
+ <mru>'/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_flattened_ver_2.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp.orig.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/down_digital_translator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/down_digital_translator/layout/magic_happy.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/comparator/layout/555_comparator.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/ctest.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_ver_2.gds'@'sg13cmos5l' '/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/r2r_dac/layout/r2r_dac.gds'@'sg13cmos5l'</mru>
  <mru-bookmarks/>
  <mru-layer-properties/>
  <mru-sessions/>
@@ -283,7 +283,7 @@ sg13cmos5l_menu.macro_in_menu_sg13cmos5l_lvs_options:F12;
  <rdb-tree-state>+by-cell,-by-category</rdb-tree-state>
  <rdb-window-dim>1.0</rdb-window-dim>
  <rdb-window-mode>fit-marker</rdb-window-mode>
- <rdb-window-state-v2>MarkerBrowserDialog="AdnQywADAAAAAAAAAAAFUAAAAssAAAftAAAAAAAABVAAAALLAAAH7QAAAAAAAAAABQAAAAAAAAAFUAAAAssAAAft";splitter_2="AAAA/wAAAAEAAAACAAABAAAAAQYB/////wEAAAABAA==";splitter="AAAA/wAAAAEAAAACAAAA/gAAAQAB/////wEAAAACAA==";markers_list="AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEAAQAAAAAAAAAAAAAAAGQAAAAYAAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAa8AAAACAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA6gAAAAEAAAAAAAAAxQAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";</rdb-window-state-v2>
+ <rdb-window-state-v2>MarkerBrowserDialog="AdnQywADAAAAAAUAAAAEOAAAB8sAAAbVAAAFAAAABDgAAAfLAAAG1QAAAAIAAAAAB4AAAAUAAAAEOAAAB8sAAAbV";splitter_2="AAAA/wAAAAEAAAACAAABAAAAAQYB/////wEAAAABAA==";splitter="AAAA/wAAAAEAAAACAAAA/gAAAQAB/////wEAAAACAA==";markers_list="AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAEAQEAAQAAAAAAAAAAAAAAAGQAAAAYAAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";directory_tree="AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAa8AAAACAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA6gAAAAEAAAAAAAAAxQAAAAEAAAAAAAAD6AAAAABkAAAAAAAAAAAAAAAAAAAAAQ==";</rdb-window-state-v2>
  <reader-options-show-always>false</reader-options-show-always>
  <ruler-color>#ff8000</ruler-color>
  <ruler-grid-snap>true</ruler-grid-snap>
@@ -328,7 +328,122 @@ sg13cmos5l_menu.macro_in_menu_sg13cmos5l_lvs_options:F12;
  <sr-window-state/>
  <stipple-offset>true</stipple-offset>
  <stipple-palette/>
- <stream-import-spec2/>
+ <stream-import-spec2>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;stream-import-data&gt;
+ &lt;files&gt;
+  &lt;file&gt;/home/gfcwfzkm/eda/designs/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/layout/op_amp_ver_2.gds&lt;/file&gt;
+ &lt;/files&gt;
+ &lt;cell-name/&gt;
+ &lt;layer-offset/&gt;
+ &lt;layer-mode&gt;original&lt;/layer-mode&gt;
+ &lt;import-mode&gt;instantiate&lt;/import-mode&gt;
+ &lt;reference-points&gt;
+ &lt;/reference-points&gt;
+ &lt;explicit-trans&gt;r0 *1 0,0&lt;/explicit-trans&gt;
+ &lt;options&gt;
+  &lt;gds2&gt;
+   &lt;box-mode&gt;1&lt;/box-mode&gt;
+   &lt;allow-big-records&gt;true&lt;/allow-big-records&gt;
+   &lt;allow-multi-xy-records&gt;true&lt;/allow-multi-xy-records&gt;
+  &lt;/gds2&gt;
+  &lt;common&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;enable-properties&gt;true&lt;/enable-properties&gt;
+   &lt;enable-text-objects&gt;true&lt;/enable-text-objects&gt;
+  &lt;/common&gt;
+  &lt;lefdef&gt;
+   &lt;read-all-layers&gt;true&lt;/read-all-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;produce-net-names&gt;true&lt;/produce-net-names&gt;
+   &lt;net-property-name&gt;#1&lt;/net-property-name&gt;
+   &lt;produce-inst-names&gt;true&lt;/produce-inst-names&gt;
+   &lt;inst-property-name&gt;#1&lt;/inst-property-name&gt;
+   &lt;produce-pin-names&gt;false&lt;/produce-pin-names&gt;
+   &lt;pin-property-name&gt;#1&lt;/pin-property-name&gt;
+   &lt;produce-cell-outlines&gt;true&lt;/produce-cell-outlines&gt;
+   &lt;cell-outline-layer&gt;OUTLINE&lt;/cell-outline-layer&gt;
+   &lt;produce-placement-blockages&gt;true&lt;/produce-placement-blockages&gt;
+   &lt;placement-blockage-layer&gt;PLACEMENT_BLK&lt;/placement-blockage-layer&gt;
+   &lt;produce-regions&gt;true&lt;/produce-regions&gt;
+   &lt;region-layer&gt;REGIONS&lt;/region-layer&gt;
+   &lt;produce-via-geometry&gt;true&lt;/produce-via-geometry&gt;
+   &lt;via_geometry-suffix-string/&gt;
+   &lt;via_geometry-datatype-string&gt;0&lt;/via_geometry-datatype-string&gt;
+   &lt;produce-pins&gt;true&lt;/produce-pins&gt;
+   &lt;pins-suffix-string&gt;.PIN&lt;/pins-suffix-string&gt;
+   &lt;pins-datatype-string&gt;2&lt;/pins-datatype-string&gt;
+   &lt;produce-lef-pins&gt;true&lt;/produce-lef-pins&gt;
+   &lt;lef_pins-suffix-string&gt;.PIN&lt;/lef_pins-suffix-string&gt;
+   &lt;lef_pins-datatype-string&gt;2&lt;/lef_pins-datatype-string&gt;
+   &lt;produce-fills&gt;true&lt;/produce-fills&gt;
+   &lt;fills-suffix-string&gt;.FILL&lt;/fills-suffix-string&gt;
+   &lt;fills-datatype-string&gt;5&lt;/fills-datatype-string&gt;
+   &lt;produce-obstructions&gt;true&lt;/produce-obstructions&gt;
+   &lt;obstructions-suffix&gt;.OBS&lt;/obstructions-suffix&gt;
+   &lt;obstructions-datatype&gt;3&lt;/obstructions-datatype&gt;
+   &lt;produce-blockages&gt;true&lt;/produce-blockages&gt;
+   &lt;blockages-suffix&gt;.BLK&lt;/blockages-suffix&gt;
+   &lt;blockages-datatype&gt;4&lt;/blockages-datatype&gt;
+   &lt;produce-labels&gt;true&lt;/produce-labels&gt;
+   &lt;labels-suffix&gt;.LABEL&lt;/labels-suffix&gt;
+   &lt;labels-datatype&gt;1&lt;/labels-datatype&gt;
+   &lt;produce-lef-labels&gt;true&lt;/produce-lef-labels&gt;
+   &lt;lef-labels-suffix&gt;.LABEL&lt;/lef-labels-suffix&gt;
+   &lt;lef-labels-datatype&gt;1&lt;/lef-labels-datatype&gt;
+   &lt;produce-routing&gt;true&lt;/produce-routing&gt;
+   &lt;routing-suffix-string/&gt;
+   &lt;routing-datatype-string&gt;0&lt;/routing-datatype-string&gt;
+   &lt;produce-special-routing&gt;true&lt;/produce-special-routing&gt;
+   &lt;special-routing-suffix-string/&gt;
+   &lt;special-routing-datatype-string&gt;0&lt;/special-routing-datatype-string&gt;
+   &lt;via-cellname-prefix&gt;VIA_&lt;/via-cellname-prefix&gt;
+   &lt;read-lef-with-def&gt;true&lt;/read-lef-with-def&gt;
+   &lt;macro-resolution-mode&gt;default&lt;/macro-resolution-mode&gt;
+   &lt;separate-groups&gt;false&lt;/separate-groups&gt;
+   &lt;joined-paths&gt;false&lt;/joined-paths&gt;
+   &lt;map-file/&gt;
+  &lt;/lefdef&gt;
+  &lt;dxf&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;unit&gt;1&lt;/unit&gt;
+   &lt;text-scaling&gt;100&lt;/text-scaling&gt;
+   &lt;circle-points&gt;100&lt;/circle-points&gt;
+   &lt;circle-accuracy&gt;0&lt;/circle-accuracy&gt;
+   &lt;contour-accuracy&gt;0&lt;/contour-accuracy&gt;
+   &lt;polyline-mode&gt;0&lt;/polyline-mode&gt;
+   &lt;render-texts-as-polygons&gt;false&lt;/render-texts-as-polygons&gt;
+   &lt;keep-other-cells&gt;false&lt;/keep-other-cells&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+  &lt;/dxf&gt;
+  &lt;cif&gt;
+   &lt;wire-mode&gt;0&lt;/wire-mode&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+  &lt;/cif&gt;
+  &lt;mag&gt;
+   &lt;lambda&gt;1&lt;/lambda&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+   &lt;keep-layer-names&gt;false&lt;/keep-layer-names&gt;
+   &lt;merge&gt;true&lt;/merge&gt;
+   &lt;lib-paths&gt;
+   &lt;/lib-paths&gt;
+  &lt;/mag&gt;
+  &lt;maly&gt;
+   &lt;dbu&gt;0.001&lt;/dbu&gt;
+   &lt;layer-map&gt;layer_map()&lt;/layer-map&gt;
+   &lt;create-other-layers&gt;true&lt;/create-other-layers&gt;
+  &lt;/maly&gt;
+ &lt;/options&gt;
+&lt;/stream-import-data&gt;
+</stream-import-spec2>
  <subres-mode>false</subres-mode>
  <synchronized-views>false</synchronized-views>
  <tech-editor-window-state/>
