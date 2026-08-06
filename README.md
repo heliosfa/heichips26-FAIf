@@ -16,58 +16,59 @@ Preliminary pinout for the FPGA interface:
 <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <table class="tg"><thead>
-        <tr>
-          <th class="tg-c3ow">I/O Block</th>
-          <th class="tg-c3ow" colspan="8">Pinout</th>
-        </tr></thead>
-      <tbody>
-        <tr>
-          <td class="tg-0pky"></td>
-          <td class="tg-c3ow">7</td>
-          <td class="tg-c3ow">6</td>
-          <td class="tg-c3ow">5</td>
-          <td class="tg-c3ow">4</td>
-          <td class="tg-c3ow">3</td>
-          <td class="tg-c3ow">2</td>
-          <td class="tg-c3ow">1</td>
-          <td class="tg-c3ow">0</td>
-        </tr>
-        <tr>
-          <td class="tg-0pky">ui_in</td>
-          <td class="tg-c3ow" colspan="8">DAC Output</td>
-        </tr>
-        <tr>
-          <td class="tg-0pky">uio_in</td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky">ADC<br>Rst</td>
-          <td class="tg-0pky">ADC<br>Start</td>
-          <td class="tg-0pky">DAC <br>Load</td>
-          <td class="tg-0pky">DAC<br>H/L</td>
-        </tr>
-        <tr>
-          <td class="tg-0pky">uo_out</td>
-          <td class="tg-c3ow" colspan="8">ADC MSB</td>
-        </tr>
-        <tr>
-          <td class="tg-0pky">uio_out</td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky"></td>
-          <td class="tg-0pky">ADC<br>End</td>
-        </tr>
-        <tr>
-          <td class="tg-0pky">uio_oe</td>
-          <td class="tg-c3ow" colspan="8">ADC LSB</td>
-        </tr>
-      </tbody></table>
+<table><thead>
+  <tr>
+    <th>I/O Block</th>
+    <th colspan="8">Pinout</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td></td>
+    <td>7</td>
+    <td>6</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>ui_in</td>
+    <td colspan="8">DAC Input</td>
+  </tr>
+  <tr>
+    <td>uio_in</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ADC<br>Rst</td>
+    <td>ADC<br>Start</td>
+    <td>DAC <br>Load</td>
+    <td>DAC<br>H/L</td>
+  </tr>
+  <tr>
+    <td>uo_out</td>
+    <td colspan="8">ADC MSB</td>
+  </tr>
+  <tr>
+    <td>uio_out</td>
+    <td></td>
+    <td></td>
+    <td>ADC<br>Tick</td>
+    <td>ADC<br>End</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>uio_oe</td>
+    <td colspan="8">ADC LSB</td>
+  </tr>
+</tbody>
+</table>
     </div>
   </foreignObject>
 </svg>
