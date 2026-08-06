@@ -56,6 +56,8 @@
             extra-packages = with pkgs; [
               # Tools
               gnumake
+              vhdl-ls
+              xdot
 
               # Simulation
               ghdl-bin
