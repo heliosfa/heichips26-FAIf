@@ -7,4 +7,4 @@ SRC_DIR := ../../../rtl
 
 DUT_SRCS := \
 	../../../macros/counter/rtl/counter.sv \
-	$(SRC_DIR)/heichips26_digital_project.sv
+	$(SRC_DIR)/heichips26_FAIf.sv

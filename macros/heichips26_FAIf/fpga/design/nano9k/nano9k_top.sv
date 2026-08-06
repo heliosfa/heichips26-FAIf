@@ -73,7 +73,7 @@ module nano9k_top (
     logic [7:0] uio_out;
     logic [7:0] uio_oe;
 
-    heichips26_digital_project heichips26_digital_project (
+    heichips26_FAIf heichips26_FAIf (
         .ui_in,  // Dedicated inputs
         .uo_out,  // Dedicated outputs
         .uio_in,  // IOs: Input path
