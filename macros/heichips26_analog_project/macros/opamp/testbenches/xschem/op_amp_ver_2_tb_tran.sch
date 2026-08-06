@@ -134,13 +134,13 @@ value=".options savecurrents
   op
   let power=-V(VPSU) * I(VVPSU)
   settype power power
-  write tb_op_amp.raw
+  write op_amp_ver_2_tb_tran.raw
   set appendwrite
   * Transient Analysis using PULSE in VPLUS, switching a signal hard 
   tran 1n 100u
   let power=-V(VPSU) * I(VVPSU)
   settype power power
-  write tb_op_amp.raw
+  write op_amp_ver_2_tb_tran.raw
   exit
 .endc
 "

@@ -133,7 +133,6 @@ device=resistor
 m=1}
 C {code_shown.sym} 95 -725 0 0 {name=NGSPICE only_toplevel=false
 value=".options savecurrents
-.include tb_r2r_dac.save
 .control
   save all
   optran 1 1 1 100n 10u 0
@@ -153,7 +152,6 @@ value=".lib cornerMOSlv.lib mos_tt
 .lib cornerMOShv.lib mos_tt
 .lib cornerRES.lib res_typ
 .lib cornerCAP.lib cap_typ
-.include sg13g2_bondpad.lib
 "}
 C {launcher.sym} 580 -580 0 0 {name=h4
 descr=SimulateNGSPICE

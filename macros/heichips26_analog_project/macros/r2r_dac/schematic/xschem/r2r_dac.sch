@@ -390,7 +390,7 @@ C {ipin.sym} 1500 -180 3 0 {name=p13 lab=nD7
 
 }
 C {ipin.sym} 1670 -350 0 0 {name=p14 lab=IDACVTAP}
-C {op_amp_ver_2.sym} 1760 -370 0 0 {name=x1}
+C {../../../opamp/schematic/xschem/op_amp_ver_2.sym} 1760 -370 0 0 {name=x1}
 C {ipin.sym} 1560 -460 0 0 {name=p15 lab=IDACDISABLE}
 C {sg13g2_pr/sg13_hv_nmos.sym} 2120 -430 0 1 {name=M1
 l=0.45u

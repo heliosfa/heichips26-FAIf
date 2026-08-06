@@ -1802,19 +1802,29 @@ C {lab_wire.sym} 3290 -1130 0 0 {name=p16 sig_type=std_logic lab=pdrive}
 C {lab_wire.sym} 3450 -1130 0 0 {name=p39 sig_type=std_logic lab=pcasc}
 C {lab_wire.sym} 2860 -1180 0 0 {name=p40 sig_type=std_logic lab=IOADISABLE}
 C {lab_wire.sym} 2970 -1230 0 0 {name=p13 sig_type=std_logic lab=POAVDD}
-C {sg13cmos5l_pr/cap_mfringe.sym} 2460 -640 0 0 {name=C1
-model=cap_mfringe
-w=19u
-l=14u
+C {sg13cmos5l_pr/cap_cmomi.sym} 2460 -640 0 0 {name=C1
+model=cap_cmomi
+w=40e-6
+l=14e-6
 mmin=1
 mmax=3
+feed=double
+subblock=0
+m=1
+mm_ok=1
 spiceprefix=X
+lvs_ignore=true
 }
-C {sg13cmos5l_pr/cap_mfringe.sym} 2460 -550 2 1 {name=C2
-model=cap_mfringe
-w=19u
-l=14u
+C {sg13cmos5l_pr/cap_cmomi.sym} 2460 -550 2 1 {name=C2
+model=cap_cmomi
+w=40e-6
+l=14e-6
 mmin=1
 mmax=3
+feed=double
+subblock=0
+m=1
+mm_ok=1
 spiceprefix=X
+lvs_ignore=true
 }

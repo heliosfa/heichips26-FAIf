@@ -4,7 +4,7 @@
 MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # Variables
-TOP = inverter
+TOP = r2r_dac
 
 .DEFAULT_GOAL := help
 

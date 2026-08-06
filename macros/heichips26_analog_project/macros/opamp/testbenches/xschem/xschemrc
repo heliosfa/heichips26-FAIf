@@ -40,6 +40,16 @@ if {![llength [info commands append_xschem_library_path_unique]]} {
   }
 }
 
+# Check if konsole exists on the system path
+if { [catch {exec which konsole} msg] == 0 } {
+    # If konsole exists, configure it as the default Xschem terminal
+    # Note: '-e' flag executes the simulator command (like ngspice) inside it
+    set terminal konsole
+} else {
+    # Fallback to standard xterm if konsole is not found
+    set terminal {xterm -geometry 100x35 -fn 9x15 -bg black -fg white -cr white -ms white}
+}
+
 # Allow execution of Tcl scripts embedded in schematics/symbols without asking
 set xschem_execute_scripts yes
 
