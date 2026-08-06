@@ -9,6 +9,9 @@ This project is implemented as a digital-on-top design with the following periph
 
 The project makes use of three dedicated analogue pins and uses the small tile size.
 
+## Block Diagram
+![FAIf Block Diagram](FAIf-Block-Diagram.svg)
+
 ## Pinout:
 
 Preliminary pinout for the FPGA interface:
