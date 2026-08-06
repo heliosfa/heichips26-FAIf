@@ -16,16 +16,29 @@ module boolean_top (
     //output  logic        hdmi_clk_n, hdmi_clk_p,
 
     // RGB LEDs
-    output logic  [2:0]  RGB0, RGB1
+    //output logic  [2:0]  RGB0, RGB1
 );
 
     logic rst_n;
     logic ena;
     logic [7:0] ui_in;
     logic [7:0] uio_in;
-    logic [7:0] uo_out;
-    logic [7:0] uio_out;
-    logic [7:0] uio_oe;
+    //logic [7:0] uo_out;
+    //logic [7:0] uio_out;
+    //logic [7:0] uio_oe;
+    logic [15:0] dac_out;
+    
+
+    dac_reg dac_reg_instance (
+        .clk(btn[3]),
+        .reset_n(rst_n),
+        .dac_in(ui_in),
+        .dac_sel(uio_in[0]),
+        .dac_load(uio_in[1]),
+        .dac_out(dac_out)
+    );
+
+    /*
 
     heichips26_FAIf heichips26_FAIf (
         .ui_in,    // Dedicated inputs
@@ -37,16 +50,19 @@ module boolean_top (
         .clk,      // clock
         .rst_n     // not reset
     );
+    */
 
     // Assignments
 
     assign ui_in = sw[7:0];
     assign uio_in = sw[15:8];
 
-    assign led[7:0] = uo_out;
-    assign led[15:8] = uio_out;
+    //assign led[7:0] = uo_out;
+    //assign led[15:8] = uio_out;
+    assign led = dac_out;
 
-    assign ena = 1'b1;
+    //assign ena = 1'b1;
+    
     assign rst_n = !btn[0];
 
 endmodule

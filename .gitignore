@@ -2,6 +2,9 @@
 **/.sigasi
 project.sigasi
 
+#Ignore Verilog files in the src directory 
+**/rtl/*.v
+
 # Generated file formats
 __pycache__/
 *.pyc

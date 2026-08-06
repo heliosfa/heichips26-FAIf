@@ -41,10 +41,15 @@ help: ## Show this help message
 .PHONY: help
 # ================================================================================================
 
+$(SRC_DIR)/%.v: $(SRC_DIR)/%.vhdl
+	ghdl -a $<
+	ghdl synth --out=verilog ${$<%.txt} > $@
+	rm ./*.cf
 
 # Clean Target
 clean: ## Remove generated files
 	rm -rf $(BUILD_DIR)
+	rm -rf $(SRC_DIR)/*.v
 .PHONY: clean
 # ================================================================================================
 
