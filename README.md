@@ -38,13 +38,13 @@ Preliminary pinout for the FPGA interface:
   </tr>
   <tr>
     <td>ui_in</td>
-    <td colspan="8">DAC Input</td>
+    <td colspan="8">DAC Input / Configuration</td>
   </tr>
   <tr>
     <td>uio_in</td>
+    <td>Load<br>Config</td>
     <td>DAC<br>Load</td>
-    <td>--DAC<br>H/L--</td>
-    <td></td>
+    <td>DAC<br>Sell</td>
     <td></td>
     <td></td>
     <td>ADC<br>Start</td>
@@ -68,7 +68,14 @@ Preliminary pinout for the FPGA interface:
   </tr>
   <tr>
     <td>uio_oe</td>
-    <td colspan="8">--ADC LSB--</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
   </tr>
 </tbody>
 </table>
@@ -81,8 +88,8 @@ We also use three dedicated analogue pins:
 | Pin | Function |
 | --- | -------- |
 |  0  | ADC In   |
-|  1  | DAC Out  |
-|  2  | ?        |
+|  1  | DAC1 Out |
+|  2  | DAC2 Out |
 
 
 ## Rest of the README
