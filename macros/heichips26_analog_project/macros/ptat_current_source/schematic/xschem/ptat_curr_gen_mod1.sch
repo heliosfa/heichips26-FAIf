@@ -13,17 +13,17 @@ T {Analog Design for CMOS VLSI Systems
 by Franco Maloberti
 Chapter 4.2.3 "Self Biased Micro-Current Generator"} 180 -680 0 0 0.4 0.4 {}
 T {Dummy transistors} 1870 -620 0 0 0.3 0.3 {}
-N 430 -520 450 -520 {lab=#net1}
-N 490 -490 490 -460 {lab=#net1}
-N 430 -520 430 -460 {lab=#net1}
-N 370 -520 430 -520 {lab=#net1}
-N 330 -360 330 -330 {lab=#net2}
-N 390 -360 390 -300 {lab=#net2}
+N 430 -520 450 -520 {lab=CSSTARTUP}
+N 490 -490 490 -460 {lab=CSSTARTUP}
+N 430 -520 430 -460 {lab=CSSTARTUP}
+N 370 -520 430 -520 {lab=CSSTARTUP}
+N 330 -360 330 -330 {lab=#net1}
+N 390 -360 390 -300 {lab=#net1}
 N 330 -580 330 -550 {lab=PCSVDD}
 N 330 -580 490 -580 {lab=PCSVDD}
 N 490 -580 490 -550 {lab=PCSVDD}
 N 330 -270 330 -150 {lab=PCSVSS}
-N 950 -460 1110 -460 {lab=#net1}
+N 950 -460 1110 -460 {lab=CSSTARTUP}
 N 320 -520 330 -520 {lab=PCSVDD}
 N 320 -580 330 -580 {lab=PCSVDD}
 N 490 -520 500 -520 {lab=PCSVDD}
@@ -39,18 +39,18 @@ N 320 -580 320 -520 {lab=PCSVDD}
 N 220 -580 320 -580 {lab=PCSVDD}
 N 500 -580 500 -520 {lab=PCSVDD}
 N 490 -580 500 -580 {lab=PCSVDD}
-N 330 -360 390 -360 {lab=#net2}
-N 370 -300 390 -300 {lab=#net2}
-N 490 -460 490 -330 {lab=#net1}
-N 390 -300 450 -300 {lab=#net2}
-N 330 -490 330 -360 {lab=#net2}
+N 330 -360 390 -360 {lab=#net1}
+N 370 -300 390 -300 {lab=#net1}
+N 490 -460 490 -330 {lab=CSSTARTUP}
+N 390 -300 450 -300 {lab=#net1}
+N 330 -490 330 -360 {lab=#net1}
 N 490 -270 490 -240 {lab=res_tap}
-N 1110 -520 1110 -460 {lab=#net1}
-N 1110 -520 1130 -520 {lab=#net1}
-N 950 -520 970 -520 {lab=#net1}
-N 950 -520 950 -460 {lab=#net1}
-N 790 -520 810 -520 {lab=#net1}
-N 790 -520 790 -460 {lab=#net1}
+N 1110 -520 1110 -460 {lab=CSSTARTUP}
+N 1110 -520 1130 -520 {lab=CSSTARTUP}
+N 950 -520 970 -520 {lab=CSSTARTUP}
+N 950 -520 950 -460 {lab=CSSTARTUP}
+N 790 -520 810 -520 {lab=CSSTARTUP}
+N 790 -520 790 -460 {lab=CSSTARTUP}
 N 1020 -580 1170 -580 {lab=PCSVDD}
 N 1170 -580 1170 -550 {lab=PCSVDD}
 N 1170 -520 1180 -520 {lab=PCSVDD}
@@ -65,9 +65,9 @@ N 860 -580 860 -520 {lab=PCSVDD}
 N 850 -580 860 -580 {lab=PCSVDD}
 N 850 -580 850 -550 {lab=PCSVDD}
 N 860 -580 1010 -580 {lab=PCSVDD}
-N 790 -460 950 -460 {lab=#net1}
-N 490 -460 790 -460 {lab=#net1}
-N 430 -460 490 -460 {lab=#net1}
+N 790 -460 950 -460 {lab=CSSTARTUP}
+N 490 -460 790 -460 {lab=CSSTARTUP}
+N 430 -460 490 -460 {lab=CSSTARTUP}
 N 700 -580 850 -580 {lab=PCSVDD}
 N 850 -380 1190 -380 {lab=CSOUT3}
 N 850 -490 850 -380 {lab=CSOUT3}
@@ -451,23 +451,21 @@ N 2410 -460 2410 -450 {lab=PCSVDD}
 N 2410 -460 2420 -460 {lab=PCSVDD}
 N 2420 -480 2420 -460 {lab=PCSVDD}
 N 1970 -40 2050 -40 {lab=PCSVSS}
-N 710 -350 1190 -350 {lab=CSSTARTUP}
-N 630 -520 650 -520 {lab=#net3}
-N 630 -520 630 -410 {lab=#net3}
-N 670 -380 690 -380 {lab=CSSTARTUP}
+N 630 -520 650 -520 {lab=#net2}
+N 630 -520 630 -410 {lab=#net2}
+N 670 -380 690 -380 {lab=#net3}
 N 620 -380 630 -380 {lab=PCSVDD}
 N 690 -520 700 -520 {lab=PCSVDD}
 N 700 -580 700 -520 {lab=PCSVDD}
 N 690 -580 700 -580 {lab=PCSVDD}
 N 690 -580 690 -550 {lab=PCSVDD}
 N 620 -580 690 -580 {lab=PCSVDD}
-N 690 -490 690 -380 {lab=CSSTARTUP}
+N 690 -490 690 -380 {lab=#net3}
 N 620 -580 620 -380 {lab=PCSVDD}
 N 630 -350 630 -150 {lab=PCSVSS}
-N 690 -380 710 -380 {lab=CSSTARTUP}
-N 710 -350 710 -330 {lab=CSSTARTUP}
+N 690 -380 710 -380 {lab=#net3}
 N 710 -180 710 -150 {lab=PCSVSS}
-N 710 -380 710 -350 {lab=CSSTARTUP}
+N 710 -380 710 -330 {lab=#net3}
 N 500 -580 620 -580 {lab=PCSVDD}
 N 500 -150 630 -150 {lab=PCSVSS}
 N 630 -150 710 -150 {lab=PCSVSS}
@@ -481,6 +479,8 @@ N 710 -260 720 -260 {lab=CSSTARTUP,wcs[4:1]}
 N 720 -300 720 -260 {lab=CSSTARTUP,wcs[4:1]}
 N 710 -300 720 -300 {lab=CSSTARTUP,wcs[4:1]}
 N 710 -310 710 -300 {lab=CSSTARTUP,wcs[4:1]}
+N 790 -350 1190 -350 {lab=CSSTARTUP}
+N 790 -460 790 -350 {lab=CSSTARTUP}
 C {sg13g2_pr/sg13_hv_nmos.sym} 350 -300 0 1 {name=M1
 l=2u
 w=2u
@@ -557,7 +557,7 @@ spiceprefix=X
 C {opin.sym} 1190 -440 0 0 {name=p3 lab=CSOUT1}
 C {opin.sym} 1190 -410 0 0 {name=p5 lab=CSOUT2}
 C {opin.sym} 1190 -380 0 0 {name=p6 lab=CSOUT3}
-C {opin.sym} 1190 -350 0 0 {name=p7 lab=CSSTARTUP}
+C {opin.sym} 1190 -350 0 0 {name=p7 lab=PBIAS}
 C {sg13g2_pr/annotate_fet_params.sym} 990 -290 0 0 {name=annot2 ref=M5
 
 }
