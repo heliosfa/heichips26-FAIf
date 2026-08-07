@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=-3.4282043e-06
+x2=5.8677059e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -31,7 +31,7 @@ hilight_wave=-1
 linewidth_mult=1
 sim_type=tran
 autoload=1
-}
+hcursor1_y=0.48729307}
 B 2 1225 -830 2025 -430 {flags=graph
 y1=-1
 y2=100
@@ -40,8 +40,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.0001
+x1=-3.4282043e-06
+x2=5.8677059e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -70,13 +70,12 @@ N 210 -220 210 -190 {lab=oa_plus}
 N 680 -330 680 -240 {lab=oa_output}
 N 680 -240 680 -190 {lab=oa_output
 spice_ignore=short}
-N 740 -240 740 -190 {lab=oa_output
+N 1050 -240 1050 -190 {lab=cout
 spice_ignore=short}
 N 680 -130 680 -70 {lab=GND
 spice_ignore=short}
-N 740 -130 740 -70 {lab=GND
+N 1050 -130 1050 -70 {lab=GND
 spice_ignore=short}
-N 680 -240 740 -240 {lab=oa_output}
 N 660 -330 680 -330 {lab=oa_output}
 N 470 -550 470 -520 {lab=opamp_disable}
 N 470 -550 500 -550 {lab=opamp_disable}
@@ -88,7 +87,6 @@ N 300 -290 310 -290 {lab=#net2}
 N 310 -130 310 -100 {lab=GND}
 N 750 -320 760 -320 {lab=GND}
 N 800 -310 800 -240 {lab=oa_output}
-N 740 -240 800 -240 {lab=oa_output}
 N 860 -310 860 -300 {lab=GND}
 N 860 -380 860 -370 {lab=#net3}
 N 800 -380 860 -380 {lab=#net3}
@@ -120,6 +118,16 @@ N 450 -330 450 -260 {lab=oa_minus}
 N 450 -330 600 -330 {lab=oa_minus}
 N 370 -350 385 -350 {lab=VPSU}
 N 445 -350 540 -350 {lab=#net1}
+N 950 -190 950 -170 {lab=GND}
+N 950 -170 1000 -170 {lab=GND}
+N 1000 -190 1000 -170 {lab=GND}
+N 950 -310 950 -290 {lab=VPSU}
+N 950 -310 1000 -310 {lab=VPSU}
+N 1000 -310 1000 -290 {lab=VPSU}
+N 950 -360 950 -310 {lab=VPSU}
+N 800 -240 880 -240 {lab=oa_output}
+N 680 -240 800 -240 {lab=oa_output}
+N 1020 -240 1050 -240 {lab=cout}
 C {title.sym} 160 0 0 0 {name=l1 author="Pascal Gesell"}
 C {vsource.sym} 140 -220 0 0 {name=VVPSU value=3.3 savecurrent=false}
 C {isource.sym} 310 -160 0 0 {name=I0 value=25e-9}
@@ -144,8 +152,12 @@ value=".options savecurrents
   tran 1n 100u
   let power=-V(VPSU) * I(VVPSU)
   settype power power
+meas tran t_rise1 when v(cout)= 330m rise=2
+meas tran t_rise2 when v(cout)= 2.97 rise=2
+let tr_1090 = t_rise2 - t_rise1
+print tr_1090
   write op_amp_ver_2_tb_tran.raw
-  exit
+  *exit
 .endc
 "
 }
@@ -181,7 +193,7 @@ tclcommand="xschem annotate_op"
 C {gnd.sym} 310 -100 0 0 {name=l3 lab=GND}
 C {gnd.sym} 540 -70 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} 680 -240 0 1 {name=p2 sig_type=std_logic lab=oa_output}
-C {vsource.sym} 210 -160 0 0 {name=VPLUS value="1.65 pulse 1 2.3 0 100n 100n 10u 20u ac 1 0" savecurrent=false}
+C {vsource.sym} 210 -160 0 0 {name=VPLUS value="1.65 pulse 0 3.3 0 100n 100n 10u 20u ac 1 0" savecurrent=false}
 C {launcher.sym} 900 -650 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/op_amp_ver_2_tb_tran.raw tran"
@@ -196,15 +208,15 @@ value=100e6
 footprint=1206
 device=resistor
 m=1
-}
-C {capa-2.sym} 740 -160 0 0 {name=C1
+spice_ignore=true}
+C {capa-2.sym} 1050 -160 0 0 {name=C1
 m=1
 value=10e-12
 footprint=1206
 device=polarized_capacitor
 }
 C {gnd.sym} 680 -70 0 0 {name=l5 lab=GND}
-C {gnd.sym} 740 -70 0 0 {name=l6 lab=GND}
+C {gnd.sym} 1050 -70 0 0 {name=l6 lab=GND}
 C {ammeter.sym} 630 -330 1 1 {name=Vmeas savecurrent=true spice_ignore=0}
 C {vsource.sym} 470 -490 0 0 {name=VPLUS1 value="0 pulse 0 3.3 25u 50n 50n 50u 100u" savecurrent=false}
 C {gnd.sym} 470 -460 0 0 {name=l8 lab=GND}
@@ -235,3 +247,7 @@ C {lab_wire.sym} 500 -410 0 0 {name=p7 sig_type=std_logic lab=opamp_disable
 }
 C {ammeter.sym} 415 -350 3 1 {name=Vmeas1 savecurrent=true spice_ignore=0}
 C {op_amp_ver_2.sym} 530 -240 0 0 {name=x1}
+C {/home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/aswitch/schematic/xschem/aswitch.sym} 950 -240 0 0 {name=x2}
+C {gnd.sym} 970 -170 0 0 {name=l11 lab=GND}
+C {lab_wire.sym} 950 -360 0 0 {name=p5 sig_type=std_logic lab=VPSU}
+C {lab_wire.sym} 1050 -240 0 1 {name=p6 sig_type=std_logic lab=cout}

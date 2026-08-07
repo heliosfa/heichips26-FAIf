@@ -1,20 +1,20 @@
-** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/testbenches/xschem/opa_ver2_Csamp_slew_tb_tran.sch
+** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/opamp/testbenches/xschem/opa_ver2_Csamp_slew_tb_tran.sch
 **.subckt opa_ver2_Csamp_slew_tb_tran
 VVPSU VPSU GND 3.3
-I0 net2 GND 25e-9
-VPLUS oa_plus GND 1.65 pulse 1 2.3 0 100n 100n 10u 20u ac 1 0
-R2 oa_output GND 100e6
-C1 oa_output GND 10e-12
+I0 net3 GND 25e-9
+VPLUS oa_plus GND 1.65 pulse 0 3.3 0 100n 100n 10u 20u ac 1 0
+C1 net2 GND 10e-12
 Vmeas oa_output oa_minus 0
 .save i(vmeas)
 VPLUS1 opamp_disable GND 0 pulse 0 3.3 25u 50n 50n 50u 100u
-XM1 net4 net2 VPSU VPSU sg13_hv_pmos w=1.2u l=0.4u ng=1 m=1 mm_ok=1
-XM2 net2 net2 VPSU VPSU sg13_hv_pmos w=1.2u l=0.4u ng=1 m=1 mm_ok=1
-V1 net3 GND 1.65 SIN 1.65 1 100k 1ns 0 0
-S1 net3 oa_output opamp_disable GND SW1
+XM1 net5 net3 VPSU VPSU sg13_hv_pmos w=1.2u l=0.4u ng=1 m=1 mm_ok=1
+XM2 net3 net3 VPSU VPSU sg13_hv_pmos w=1.2u l=0.4u ng=1 m=1 mm_ok=1
+V1 net4 GND 1.65 SIN 1.65 1 100k 1ns 0 0
+S1 net4 oa_output opamp_disable GND SW1
 Vmeas1 VPSU net1 0
 .save i(vmeas1)
-x1 net1 net4 oa_minus oa_output oa_plus GND opamp_disable op_amp_ver_2
+x1 net1 net5 oa_minus oa_output oa_plus GND opamp_disable op_amp_ver_2
+x2 GND VPSU net2 oa_output GND VPSU aswitch
 **** begin user architecture code
 
 .lib cornerMOSlv.lib mos_tt
@@ -38,8 +38,12 @@ x1 net1 net4 oa_minus oa_output oa_plus GND opamp_disable op_amp_ver_2
   tran 1n 100u
   let power=-V(VPSU) * I(VVPSU)
   settype power power
+meas tran t_rise1 when v(vout)= 330m rise=2
+meas tran t_rise2 when v(vout)= 2.97 rise=2
+let tr_1090 = t_rise2 - t_rise1
+print tr_1090
   write op_amp_ver_2_tb_tran.raw
-  exit
+  *exit
 .endc
 
 
@@ -47,8 +51,8 @@ x1 net1 net4 oa_minus oa_output oa_plus GND opamp_disable op_amp_ver_2
 **.ends
 
 * expanding   symbol:  op_amp_ver_2.sym # of pins=7
-** sym_path: /home/benedikt/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/schematic/xschem/op_amp_ver_2.sym
-** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_analog_project/macros/opamp/schematic/xschem/op_amp_ver_2.sch
+** sym_path: /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/opamp/schematic/xschem/op_amp_ver_2.sym
+** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/opamp/schematic/xschem/op_amp_ver_2.sch
 .subckt op_amp_ver_2 POAVDD IOAIREF IOAM OOA IOAP POAVSS IOADISABLE
 *.iopin POAVDD
 *.ipin IOAM
@@ -157,6 +161,26 @@ XMDOP7 pdrive nIOADISABLE POAVDD POAVDD sg13_hv_pmos w=1.2u l=0.6u ng=1 m=1 mm_o
 XMDOP8 pcasc nIOADISABLE POAVDD POAVDD sg13_hv_pmos w=1.2u l=0.6u ng=1 m=1 mm_ok=1
 XC1 pdrive OOA cap_cmomi w=40e-6 l=14e-6 mmin=1 mmax=3 feed=double subblock=0 m=1 mm_ok=1
 XC2 ndrive OOA cap_cmomi w=40e-6 l=14e-6 mmin=1 mmax=3 feed=double subblock=0 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/aswitch/schematic/xschem/aswitch.sym # of
+*+ pins=6
+** sym_path: /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/aswitch/schematic/xschem/aswitch.sym
+** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_FAIf/macros/aswitch/schematic/xschem/aswitch.sch
+.subckt aswitch sw_b VDD b a VSS sw
+*.iopin a
+*.iopin sw_b
+*.iopin b
+*.iopin sw
+*.iopin VDD
+*.iopin VSS
+XM1 a sw b VSS sg13_hv_nmos w=4u l=0.6u ng=2 m=1 mm_ok=1
+XM2 a sw_b b VDD sg13_hv_pmos w=14u l=0.6u ng=2 m=1 mm_ok=1
+XM1Dummyb a sw_b a VSS sg13_hv_nmos w=2u l=0.6u ng=1 m=1 mm_ok=1
+XM3 b sw_b b VSS sg13_hv_nmos w=2u l=0.6u ng=1 m=1 mm_ok=1
+XM4 a sw a VDD sg13_hv_pmos w=7u l=0.6u ng=1 m=1 mm_ok=1
+XM5 b sw b VDD sg13_hv_pmos w=7u l=0.6u ng=1 m=1 mm_ok=1
 .ends
 
 .GLOBAL GND
