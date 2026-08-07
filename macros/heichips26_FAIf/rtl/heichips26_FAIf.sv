@@ -26,7 +26,9 @@ module heichips26_FAIf (
 
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, uio_in[4:3]};
-
+    assign uio_out[7:5] = '0;
+    assign uio_out[2:0] = '0;
+    
 
     logic adc_clear, adc_ena, adc_start;
     logic adc_done, adc_tick;
