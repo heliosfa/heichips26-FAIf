@@ -11,7 +11,7 @@ L 4 1770 -1580 1770 -1410 {fill = false
 dash = 16}
 L 4 1770 -840 1770 -790 {fill = false
 dash = 16}
-T {HeiChips 2026 - Analog Project} 1030 -2040 0 0 1 1 {}
+T {HeiChips 2026 - Analog Project} 1280 -2390 0 0 1 1 {}
 T {ANALOG} 1670 -1960 0 0 0.4 0.4 {}
 T {DIGITAL} 1780 -1960 0 0 0.4 0.4 {}
 N 580 -730 580 -710 {lab=VAPWR}
@@ -77,20 +77,20 @@ N 1520 -1750 1670 -1750 {lab=iSAR_COMP}
 N 1140 -1730 1350 -1730 {lab=iSAR_DAC}
 N 1140 -1730 1140 -1480 {lab=iSAR_DAC}
 N 1140 -1480 1210 -1480 {lab=iSAR_DAC}
-N 620 -1750 650 -1750 {lab=#net17}
-N 620 -1830 620 -1750 {lab=#net17}
-N 620 -1830 850 -1830 {lab=#net17}
-N 820 -1730 850 -1730 {lab=#net17}
-N 850 -1830 850 -1730 {lab=#net17}
-N 730 -1680 730 -1630 {lab=VGND}
-N 730 -1850 730 -1780 {lab=VAPWR}
-N 690 -1850 690 -1800 {lab=VGND}
+N 630 -1790 660 -1790 {lab=#net17}
+N 630 -1870 630 -1790 {lab=#net17}
+N 630 -1870 860 -1870 {lab=#net17}
+N 830 -1770 860 -1770 {lab=#net17}
+N 860 -1870 860 -1770 {lab=#net17}
+N 740 -1720 740 -1670 {lab=VGND}
+N 740 -1890 740 -1820 {lab=VAPWR}
+N 700 -1890 700 -1840 {lab=VGND}
 N 720 -550 720 -530 {lab=iIREF3}
 N 680 -550 680 -530 {lab=iIREF2}
 N 640 -550 640 -530 {lab=iIREF1}
 N 1510 -860 1530 -860 {lab=iIREF3}
 N 1510 -1480 1530 -1480 {lab=iIREF2}
-N 690 -1660 690 -1630 {lab=iIREF1}
+N 700 -1700 700 -1670 {lab=iIREF1}
 N 930 -640 930 -610 {lab=iVREF}
 N 930 -610 1070 -610 {lab=iVREF}
 N 1070 -610 1070 -580 {lab=iVREF}
@@ -100,7 +100,7 @@ N 930 -750 930 -700 {lab=VAPWR}
 N 930 -520 930 -480 {lab=VGND}
 N 1510 -1500 1530 -1500 {lab=iVREF}
 N 1510 -880 1530 -880 {lab=iVREF}
-N 570 -1710 650 -1710 {lab=analog_0}
+N 580 -1750 660 -1750 {lab=analog_0}
 N 670 -860 1210 -860 {lab=analog_1}
 N 790 -680 820 -680 {lab=iPBIAS}
 N 1390 -1860 1390 -1830 {lab=iPBIAS}
@@ -109,8 +109,7 @@ N 1650 -1090 1650 -1050 {lab=VAPWR}
 N 1870 -1050 1890 -1050 {lab=VPWR}
 N 1890 -1090 1890 -1050 {lab=VPWR}
 N 1770 -930 1770 -910 {lab=VGND}
-N 910 -1010 1670 -1010 {lab=#net18}
-N 910 -1610 910 -1010 {lab=#net18}
+N 960 -1010 1670 -1010 {lab=#net18}
 N 1880 -600 1930 -600 {lab=DAC_OUT[0]}
 N 1880 -620 1930 -620 {lab=DAC_OUT[1]}
 N 1880 -640 1930 -640 {lab=DAC_OUT[2]}
@@ -129,7 +128,6 @@ N 1880 -1340 1930 -1340 {lab=SAR_DAC[6]}
 N 1880 -1360 1930 -1360 {lab=SAR_DAC[7]}
 N 1870 -1750 1930 -1750 {lab=SAR_COMP}
 N 1870 -1010 1940 -1010 {lab=SAR_SnH}
-N 1200 -1770 1350 -1770 {lab=iSAR_AN}
 N 1070 -520 1070 -480 {lab=VGND}
 N 160 -1260 200 -1260 {lab=clk}
 N 160 -1240 200 -1240 {lab=ena}
@@ -180,6 +178,11 @@ N 160 -1360 200 -1360 {lab=VPWR}
 N 160 -300 200 -300 {lab=analog_2}
 N 160 -280 200 -280 {lab=analog_1}
 N 160 -260 200 -260 {lab=analog_0}
+N 860 -1770 890 -1770 {lab=#net17}
+N 1090 -1770 1350 -1770 {lab=iSAR_AN}
+N 960 -1690 960 -1010 {lab=#net18}
+N 1020 -1690 1020 -1660 {lab=VGND}
+N 1020 -1850 1020 -1820 {lab=VAPWR}
 C {title-2.sym} 0 0 0 0 {name=l1 author="ABCDEFG" rev=1.0 lock=true}
 C {555_comparator.sym} 1370 -1750 0 0 {name=x1}
 C {down_digital_translator.sym} 1690 -1690 0 0 {name=x2}
@@ -222,12 +225,12 @@ C {lab_pin.sym} 1530 -1430 2 0 {name=p69 sig_type=std_logic lab=VGND
 }
 C {lab_pin.sym} 820 -680 2 0 {name=p70 sig_type=std_logic lab=iPBIAS
 }
-C {op_amp_ver_2.sym} 720 -1730 0 0 {name=x8}
-C {lab_pin.sym} 730 -1850 1 0 {name=p71 sig_type=std_logic lab=VAPWR
+C {op_amp_ver_2.sym} 730 -1770 0 0 {name=x8}
+C {lab_pin.sym} 740 -1890 1 0 {name=p71 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 730 -1630 3 0 {name=p72 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 740 -1670 3 0 {name=p72 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 690 -1850 1 0 {name=p73 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 700 -1890 1 0 {name=p73 sig_type=std_logic lab=VGND
 }
 C {lab_pin.sym} 640 -530 3 0 {name=p74 sig_type=std_logic lab=iIREF1
 }
@@ -236,7 +239,7 @@ C {lab_pin.sym} 680 -530 3 0 {name=p75 sig_type=std_logic lab=iIREF2
 }
 C {lab_pin.sym} 720 -530 3 0 {name=p76 sig_type=std_logic lab=iIREF3
 }
-C {lab_pin.sym} 690 -1630 3 0 {name=p77 sig_type=std_logic lab=iIREF1
+C {lab_pin.sym} 700 -1670 3 0 {name=p77 sig_type=std_logic lab=iIREF1
 }
 C {lab_pin.sym} 1530 -1480 2 0 {name=p78 sig_type=std_logic lab=iIREF2
 
@@ -287,7 +290,7 @@ C {lab_pin.sym} 1530 -880 2 0 {name=p83 sig_type=std_logic lab=iVREF
 }
 C {lab_pin.sym} 1530 -1500 2 0 {name=p84 sig_type=std_logic lab=iVREF
 }
-C {devices/iopin.sym} 570 -1710 2 0 {name=p85 lab=analog_0}
+C {devices/iopin.sym} 580 -1750 2 0 {name=p85 lab=analog_0}
 C {devices/iopin.sym} 670 -860 2 0 {name=p86 lab=analog_1}
 C {lab_pin.sym} 1390 -1860 1 0 {name=p87 sig_type=std_logic lab=iPBIAS
 }
@@ -395,3 +398,8 @@ C {conn_3x1.sym} 220 -280 0 1 {name=c10 footprint=connector(3,1)}
 C {devices/iopin.sym} 160 -300 2 0 {name=p65 lab=analog_2}
 C {devices/iopin.sym} 160 -280 2 0 {name=p66 lab=analog_1}
 C {devices/iopin.sym} 160 -260 2 0 {name=p115 lab=analog_0}
+C {sample_and_hold.sym} 940 -1740 0 0 {name=x10}
+C {lab_pin.sym} 1020 -1850 1 0 {name=p61 sig_type=std_logic lab=VAPWR
+}
+C {lab_pin.sym} 1020 -1660 3 0 {name=p62 sig_type=std_logic lab=VGND
+}

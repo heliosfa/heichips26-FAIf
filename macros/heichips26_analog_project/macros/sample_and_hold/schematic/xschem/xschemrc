@@ -46,13 +46,4 @@ set xschem_execute_scripts yes
 # Add current directory to xschem library path
 append_xschem_library_path_unique [file dirname [info script]]
 append_xschem_library_path_unique [file join [file dirname [info script]] ../../testbenches/xschem]
-
-# Source project xschemrc
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/8x_inverting_digital_level_translator/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/comparator/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/down_digital_translator/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/opamp/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/ptat_current_source/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/r2r_dac/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/digital_level_translator/schematic/xschem]
-append_xschem_library_path_unique [file join [file dirname [info script]] ../../macros/sample_and_hold/schematic/xschem]
+append_xschem_library_path_unique [file join [file dirname [info script]] ../../../aswitch/schematic/xschem]
