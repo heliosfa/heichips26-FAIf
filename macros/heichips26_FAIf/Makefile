@@ -36,8 +36,9 @@ FINAL_DIR      	:= final
 # is needed for linting and RTL simulation of the whole design.
 MODULES_SYNTH := \
 	$(SRC_DIR)/heichips26_FAIf.sv \
+	$(SRC_DIR)/analogue_interface.sv \
 	$(SRC_DIR)/gen/dac_reg.v \
-	$(SRC_DIR)/gen/sar.v \
+	$(SRC_DIR)/gen/sar.v
 
 MODULES_SIM := \
 	$(MODULES_SYNTH)

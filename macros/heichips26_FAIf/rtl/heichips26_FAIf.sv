@@ -63,6 +63,13 @@ module heichips26_FAIf (
         .comp(adc_comp)
     );
 
+    analogue_interface analogue_interface_instance (
+        .adc_ref(adc_ref_out),
+        .adc_hold(adc_hold),
+        .adc_comp(adc_comp),
+        .dac_out(dac_out)
+    );
+
     assign adc_clear = uio_in[0];
     assign adc_ena = uio_in[1];
     assign adc_start = uio_in[2];
