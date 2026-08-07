@@ -81,8 +81,8 @@ We also use three dedicated analogue pins:
 | Pin | Function |
 | --- | -------- |
 |  0  | ADC In   |
-|  1  | DAC Out  |
-|  2  | ?        |
+|  1  | DAC1 Out |
+|  2  | DAC2 Out |
 
 
 ## Rest of the README
