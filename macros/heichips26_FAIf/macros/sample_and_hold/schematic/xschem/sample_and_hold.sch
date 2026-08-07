@@ -41,10 +41,10 @@ C {aswitch.sym} 580 -370 0 0 {name=x1}
 C {title.sym} 160 0 0 0 {name=l1 author="Stefan Schippers"}
 C {sg13cmos5l_pr/cap_cmomi.sym} 790 -230 0 0 {name=C1
 model=cap_cmomi
-w=5e-6
-l=5e-6
+w=50e-6
+l=25e-6
 mmin=1
-mmax=4
+mmax=3
 feed=double
 subblock=0
 m=1

@@ -5,130 +5,135 @@ V {}
 S {}
 F {}
 E {}
-L 4 1770 -1970 1770 -1820 {fill = false
+L 4 1890 -2240 1890 -2090 {fill = false
 dash = 16}
-L 4 1770 -1580 1770 -1410 {fill = false
+L 4 1890 -1850 1890 -1680 {fill = false
 dash = 16}
-L 4 1770 -840 1770 -790 {fill = false
+L 4 1890 -1110 1890 -1060 {fill = false
+dash = 16}
+L 4 1890 -720 1890 -630 {fill = false
+dash = 16}
+L 4 1890 -280 1890 -30 {fill = false
 dash = 16}
 T {HeiChips 2026 - Analog Project} 1280 -2390 0 0 1 1 {}
-T {ANALOG} 1670 -1960 0 0 0.4 0.4 {}
-T {DIGITAL} 1780 -1960 0 0 0.4 0.4 {}
-N 580 -730 580 -710 {lab=VAPWR}
-N 1410 -1850 1410 -1820 {lab=VAPWR}
-N 580 -550 580 -530 {lab=VGND}
-N 1410 -1680 1410 -1660 {lab=VGND}
-N 1770 -1670 1770 -1650 {lab=VGND}
-N 1640 -1790 1670 -1790 {lab=VPWR}
-N 1640 -1820 1640 -1790 {lab=VPWR}
-N 1900 -1430 1900 -1380 {lab=VPWR}
-N 1880 -1380 1900 -1380 {lab=VPWR}
-N 1900 -810 1900 -760 {lab=VPWR}
-N 1880 -760 1900 -760 {lab=VPWR}
-N 1640 -1380 1660 -1380 {lab=VAPWR}
-N 1640 -1430 1640 -1380 {lab=VAPWR}
-N 1640 -760 1660 -760 {lab=VAPWR}
-N 1640 -810 1640 -760 {lab=VAPWR}
-N 1770 -540 1770 -520 {lab=VGND}
-N 1770 -1160 1770 -1140 {lab=VGND}
-N 1310 -1360 1660 -1360 {lab=#net1}
-N 1310 -1390 1310 -1360 {lab=#net1}
-N 1330 -1340 1660 -1340 {lab=#net2}
-N 1330 -1390 1330 -1340 {lab=#net2}
-N 1350 -1320 1660 -1320 {lab=#net3}
-N 1350 -1390 1350 -1320 {lab=#net3}
-N 1370 -1300 1660 -1300 {lab=#net4}
-N 1370 -1390 1370 -1300 {lab=#net4}
-N 1390 -1280 1660 -1280 {lab=#net5}
-N 1390 -1390 1390 -1280 {lab=#net5}
-N 1410 -1260 1660 -1260 {lab=#net6}
-N 1410 -1390 1410 -1260 {lab=#net6}
-N 1430 -1240 1660 -1240 {lab=#net7}
-N 1430 -1390 1430 -1240 {lab=#net7}
-N 1450 -1220 1660 -1220 {lab=#net8}
-N 1450 -1390 1450 -1220 {lab=#net8}
-N 1310 -740 1660 -740 {lab=#net9}
-N 1310 -770 1310 -740 {lab=#net9}
-N 1330 -720 1660 -720 {lab=#net10}
-N 1330 -770 1330 -720 {lab=#net10}
-N 1350 -700 1660 -700 {lab=#net11}
-N 1350 -770 1350 -700 {lab=#net11}
-N 1370 -680 1660 -680 {lab=#net12}
-N 1370 -770 1370 -680 {lab=#net12}
-N 1390 -660 1660 -660 {lab=#net13}
-N 1390 -770 1390 -660 {lab=#net13}
-N 1430 -620 1660 -620 {lab=#net14}
-N 1430 -770 1430 -620 {lab=#net14}
-N 1410 -640 1660 -640 {lab=#net15}
-N 1410 -770 1410 -640 {lab=#net15}
-N 1450 -600 1660 -600 {lab=#net16}
-N 1450 -770 1450 -600 {lab=#net16}
-N 1520 -1430 1530 -1430 {lab=VGND}
-N 1520 -810 1530 -810 {lab=VGND}
-N 1510 -910 1530 -910 {lab=VAPWR}
-N 1510 -1530 1530 -1530 {lab=VAPWR}
-N 1510 -1460 1520 -1460 {lab=VGND}
-N 1520 -1460 1520 -1430 {lab=VGND}
-N 1510 -1430 1520 -1430 {lab=VGND}
-N 1510 -840 1520 -840 {lab=VGND}
-N 1520 -840 1520 -810 {lab=VGND}
-N 1510 -810 1520 -810 {lab=VGND}
-N 1520 -1750 1670 -1750 {lab=iSAR_COMP}
-N 1140 -1730 1350 -1730 {lab=iSAR_DAC}
-N 1140 -1730 1140 -1480 {lab=iSAR_DAC}
-N 1140 -1480 1210 -1480 {lab=iSAR_DAC}
-N 630 -1790 660 -1790 {lab=#net17}
-N 630 -1870 630 -1790 {lab=#net17}
-N 630 -1870 860 -1870 {lab=#net17}
-N 830 -1770 860 -1770 {lab=#net17}
-N 860 -1870 860 -1770 {lab=#net17}
-N 740 -1720 740 -1670 {lab=VGND}
-N 740 -1890 740 -1820 {lab=VAPWR}
-N 700 -1890 700 -1840 {lab=VGND}
-N 720 -550 720 -530 {lab=iIREF3}
-N 680 -550 680 -530 {lab=iIREF2}
-N 640 -550 640 -530 {lab=iIREF1}
-N 1510 -860 1530 -860 {lab=iIREF3}
-N 1510 -1480 1530 -1480 {lab=iIREF2}
-N 700 -1700 700 -1670 {lab=iIREF1}
-N 930 -640 930 -610 {lab=iVREF}
-N 930 -610 1070 -610 {lab=iVREF}
-N 1070 -610 1070 -580 {lab=iVREF}
-N 930 -610 930 -580 {lab=iVREF}
-N 1070 -610 1100 -610 {lab=iVREF}
-N 930 -750 930 -700 {lab=VAPWR}
-N 930 -520 930 -480 {lab=VGND}
-N 1510 -1500 1530 -1500 {lab=iVREF}
-N 1510 -880 1530 -880 {lab=iVREF}
-N 580 -1750 660 -1750 {lab=analog_0}
-N 670 -860 1210 -860 {lab=analog_1}
-N 790 -680 820 -680 {lab=iPBIAS}
-N 1390 -1860 1390 -1830 {lab=iPBIAS}
-N 1650 -1050 1670 -1050 {lab=VAPWR}
-N 1650 -1090 1650 -1050 {lab=VAPWR}
-N 1870 -1050 1890 -1050 {lab=VPWR}
-N 1890 -1090 1890 -1050 {lab=VPWR}
-N 1770 -930 1770 -910 {lab=VGND}
-N 960 -1010 1670 -1010 {lab=#net18}
-N 1880 -600 1930 -600 {lab=DAC_OUT[0]}
-N 1880 -620 1930 -620 {lab=DAC_OUT[1]}
-N 1880 -640 1930 -640 {lab=DAC_OUT[2]}
-N 1880 -660 1930 -660 {lab=DAC_OUT[3]}
-N 1880 -700 1930 -700 {lab=DAC_OUT[5]}
-N 1880 -680 1930 -680 {lab=DAC_OUT[4]}
-N 1880 -720 1930 -720 {lab=DAC_OUT[6]}
-N 1880 -740 1930 -740 {lab=DAC_OUT[7]}
-N 1880 -1220 1930 -1220 {lab=SAR_DAC[0]}
-N 1880 -1240 1930 -1240 {lab=SAR_DAC[1]}
-N 1880 -1260 1930 -1260 {lab=SAR_DAC[2]}
-N 1880 -1280 1930 -1280 {lab=SAR_DAC[3]}
-N 1880 -1300 1930 -1300 {lab=SAR_DAC[4]}
-N 1880 -1320 1930 -1320 {lab=SAR_DAC[5]}
-N 1880 -1340 1930 -1340 {lab=SAR_DAC[6]}
-N 1880 -1360 1930 -1360 {lab=SAR_DAC[7]}
-N 1870 -1750 1930 -1750 {lab=SAR_COMP}
-N 1870 -1010 1940 -1010 {lab=SAR_SnH}
-N 1070 -520 1070 -480 {lab=VGND}
+T {ANALOG} 1790 -2230 0 0 0.4 0.4 {}
+T {DIGITAL} 1900 -2230 0 0 0.4 0.4 {}
+T {ANALOG} 1790 -180 0 0 0.4 0.4 {}
+T {DIGITAL} 1900 -180 0 0 0.4 0.4 {}
+N 620 -460 620 -440 {lab=VAPWR}
+N 1530 -2120 1530 -2090 {lab=VAPWR}
+N 620 -280 620 -260 {lab=VGND}
+N 1530 -1950 1530 -1930 {lab=VGND}
+N 1890 -1940 1890 -1920 {lab=VGND}
+N 1760 -2060 1790 -2060 {lab=VPWR}
+N 1760 -2090 1760 -2060 {lab=VPWR}
+N 2020 -1700 2020 -1650 {lab=VPWR}
+N 2000 -1650 2020 -1650 {lab=VPWR}
+N 2020 -1080 2020 -1030 {lab=VPWR}
+N 2000 -1030 2020 -1030 {lab=VPWR}
+N 1760 -1650 1780 -1650 {lab=VAPWR}
+N 1760 -1700 1760 -1650 {lab=VAPWR}
+N 1760 -1030 1780 -1030 {lab=VAPWR}
+N 1760 -1080 1760 -1030 {lab=VAPWR}
+N 1890 -810 1890 -790 {lab=VGND}
+N 1890 -1430 1890 -1410 {lab=VGND}
+N 1430 -1630 1780 -1630 {lab=#net1}
+N 1430 -1660 1430 -1630 {lab=#net1}
+N 1450 -1610 1780 -1610 {lab=#net2}
+N 1450 -1660 1450 -1610 {lab=#net2}
+N 1470 -1590 1780 -1590 {lab=#net3}
+N 1470 -1660 1470 -1590 {lab=#net3}
+N 1490 -1570 1780 -1570 {lab=#net4}
+N 1490 -1660 1490 -1570 {lab=#net4}
+N 1510 -1550 1780 -1550 {lab=#net5}
+N 1510 -1660 1510 -1550 {lab=#net5}
+N 1530 -1530 1780 -1530 {lab=#net6}
+N 1530 -1660 1530 -1530 {lab=#net6}
+N 1550 -1510 1780 -1510 {lab=#net7}
+N 1550 -1660 1550 -1510 {lab=#net7}
+N 1570 -1490 1780 -1490 {lab=#net8}
+N 1570 -1660 1570 -1490 {lab=#net8}
+N 1430 -1010 1780 -1010 {lab=#net9}
+N 1430 -1040 1430 -1010 {lab=#net9}
+N 1450 -990 1780 -990 {lab=#net10}
+N 1450 -1040 1450 -990 {lab=#net10}
+N 1470 -970 1780 -970 {lab=#net11}
+N 1470 -1040 1470 -970 {lab=#net11}
+N 1490 -950 1780 -950 {lab=#net12}
+N 1490 -1040 1490 -950 {lab=#net12}
+N 1510 -930 1780 -930 {lab=#net13}
+N 1510 -1040 1510 -930 {lab=#net13}
+N 1550 -890 1780 -890 {lab=#net14}
+N 1550 -1040 1550 -890 {lab=#net14}
+N 1530 -910 1780 -910 {lab=#net15}
+N 1530 -1040 1530 -910 {lab=#net15}
+N 1570 -870 1780 -870 {lab=#net16}
+N 1570 -1040 1570 -870 {lab=#net16}
+N 1640 -1700 1650 -1700 {lab=VGND}
+N 1640 -1080 1650 -1080 {lab=VGND}
+N 1630 -1180 1650 -1180 {lab=VAPWR}
+N 1630 -1800 1650 -1800 {lab=VAPWR}
+N 1630 -1730 1640 -1730 {lab=VGND}
+N 1640 -1730 1640 -1700 {lab=VGND}
+N 1630 -1700 1640 -1700 {lab=VGND}
+N 1630 -1110 1640 -1110 {lab=VGND}
+N 1640 -1110 1640 -1080 {lab=VGND}
+N 1630 -1080 1640 -1080 {lab=VGND}
+N 1640 -2020 1790 -2020 {lab=iSAR_COMP}
+N 1260 -2000 1470 -2000 {lab=iSAR_DAC}
+N 1260 -2000 1260 -1750 {lab=iSAR_DAC}
+N 1260 -1750 1330 -1750 {lab=iSAR_DAC}
+N 750 -2060 780 -2060 {lab=#net17}
+N 750 -2140 750 -2060 {lab=#net17}
+N 750 -2140 980 -2140 {lab=#net17}
+N 950 -2040 980 -2040 {lab=#net17}
+N 980 -2140 980 -2040 {lab=#net17}
+N 860 -1990 860 -1940 {lab=VGND}
+N 860 -2160 860 -2090 {lab=VAPWR}
+N 820 -2160 820 -2110 {lab=VGND}
+N 760 -280 760 -260 {lab=iIREF3}
+N 720 -280 720 -260 {lab=iIREF2}
+N 680 -280 680 -260 {lab=iIREF1}
+N 1630 -1130 1650 -1130 {lab=iIREF3}
+N 1630 -1750 1650 -1750 {lab=iIREF2}
+N 820 -1970 820 -1940 {lab=iIREF1}
+N 1140 -350 1140 -320 {lab=iVREF}
+N 1140 -320 1280 -320 {lab=iVREF}
+N 1280 -320 1280 -290 {lab=iVREF}
+N 1140 -320 1140 -290 {lab=iVREF}
+N 1280 -320 1310 -320 {lab=iVREF}
+N 1140 -460 1140 -410 {lab=VAPWR}
+N 1140 -230 1140 -190 {lab=VGND}
+N 1630 -1770 1650 -1770 {lab=iVREF}
+N 1630 -1150 1650 -1150 {lab=iVREF}
+N 700 -2020 780 -2020 {lab=analog_0}
+N 860 -410 890 -410 {lab=iPBIAS}
+N 1510 -2130 1510 -2100 {lab=iPBIAS}
+N 1770 -1320 1790 -1320 {lab=VAPWR}
+N 1770 -1360 1770 -1320 {lab=VAPWR}
+N 1990 -1320 2010 -1320 {lab=VPWR}
+N 2010 -1360 2010 -1320 {lab=VPWR}
+N 1890 -1200 1890 -1180 {lab=VGND}
+N 1080 -1280 1790 -1280 {lab=#net18}
+N 2000 -870 2050 -870 {lab=DAC0_OUT[0]}
+N 2000 -890 2050 -890 {lab=DAC0_OUT[1]}
+N 2000 -910 2050 -910 {lab=DAC0_OUT[2]}
+N 2000 -930 2050 -930 {lab=DAC0_OUT[3]}
+N 2000 -970 2050 -970 {lab=DAC0_OUT[5]}
+N 2000 -950 2050 -950 {lab=DAC0_OUT[4]}
+N 2000 -990 2050 -990 {lab=DAC0_OUT[6]}
+N 2000 -1010 2050 -1010 {lab=DAC0_OUT[7]}
+N 2000 -1490 2050 -1490 {lab=SAR_DAC[0]}
+N 2000 -1510 2050 -1510 {lab=SAR_DAC[1]}
+N 2000 -1530 2050 -1530 {lab=SAR_DAC[2]}
+N 2000 -1550 2050 -1550 {lab=SAR_DAC[3]}
+N 2000 -1570 2050 -1570 {lab=SAR_DAC[4]}
+N 2000 -1590 2050 -1590 {lab=SAR_DAC[5]}
+N 2000 -1610 2050 -1610 {lab=SAR_DAC[6]}
+N 2000 -1630 2050 -1630 {lab=SAR_DAC[7]}
+N 1990 -2020 2050 -2020 {lab=SAR_COMP}
+N 1990 -1280 2060 -1280 {lab=SAR_SnH}
+N 1280 -230 1280 -190 {lab=VGND}
 N 160 -1260 200 -1260 {lab=clk}
 N 160 -1240 200 -1240 {lab=ena}
 N 160 -1280 200 -1280 {lab=rst_n}
@@ -178,75 +183,185 @@ N 160 -1360 200 -1360 {lab=VPWR}
 N 160 -300 200 -300 {lab=analog_2}
 N 160 -280 200 -280 {lab=analog_1}
 N 160 -260 200 -260 {lab=analog_0}
-N 860 -1770 890 -1770 {lab=#net17}
-N 1090 -1770 1350 -1770 {lab=iSAR_AN}
-N 960 -1690 960 -1010 {lab=#net18}
-N 1020 -1690 1020 -1660 {lab=VGND}
-N 1020 -1850 1020 -1820 {lab=VAPWR}
-C {title-2.sym} 0 0 0 0 {name=l1 author="ABCDEFG" rev=1.0 lock=true}
-C {555_comparator.sym} 1370 -1750 0 0 {name=x1}
-C {down_digital_translator.sym} 1690 -1690 0 0 {name=x2}
-C {ptat_curr_gen_mod1.sym} 550 -570 0 0 {name=x3}
-C {r2r_dac.sym} 1570 -1320 0 1 {name=x4}
-C {r2r_dac.sym} 1570 -700 0 1 {name=x5}
-C {8x_inverting_digital_level_translator.sym} 1860 -1180 0 1 {name=x6}
-C {8x_inverting_digital_level_translator.sym} 1860 -560 0 1 {name=x7}
-C {lab_pin.sym} 580 -730 1 0 {name=p1 sig_type=std_logic lab=VAPWR
+N 980 -2040 1010 -2040 {lab=#net17}
+N 1210 -2040 1470 -2040 {lab=iSAR_AN}
+N 1080 -1960 1080 -1280 {lab=#net18}
+N 1140 -1960 1140 -1930 {lab=VGND}
+N 1140 -2120 1140 -2090 {lab=VAPWR}
+N 2020 -650 2020 -600 {lab=VPWR}
+N 2000 -600 2020 -600 {lab=VPWR}
+N 1760 -600 1780 -600 {lab=VAPWR}
+N 1760 -650 1760 -600 {lab=VAPWR}
+N 1890 -380 1890 -360 {lab=VGND}
+N 1430 -580 1780 -580 {lab=#net19}
+N 1430 -610 1430 -580 {lab=#net19}
+N 1450 -560 1780 -560 {lab=#net20}
+N 1450 -610 1450 -560 {lab=#net20}
+N 1470 -540 1780 -540 {lab=#net21}
+N 1470 -610 1470 -540 {lab=#net21}
+N 1490 -520 1780 -520 {lab=#net22}
+N 1490 -610 1490 -520 {lab=#net22}
+N 1510 -500 1780 -500 {lab=#net23}
+N 1510 -610 1510 -500 {lab=#net23}
+N 1550 -460 1780 -460 {lab=#net24}
+N 1550 -610 1550 -460 {lab=#net24}
+N 1530 -480 1780 -480 {lab=#net25}
+N 1530 -610 1530 -480 {lab=#net25}
+N 1570 -440 1780 -440 {lab=#net26}
+N 1570 -610 1570 -440 {lab=#net26}
+N 1640 -650 1650 -650 {lab=VGND}
+N 1630 -750 1650 -750 {lab=VAPWR}
+N 1630 -680 1640 -680 {lab=VGND}
+N 1640 -680 1640 -650 {lab=VGND}
+N 1630 -650 1640 -650 {lab=VGND}
+N 1630 -700 1650 -700 {lab=iIREF4}
+N 1630 -720 1650 -720 {lab=iVREF}
+N 800 -280 800 -260 {lab=iIREF3}
+N 700 -700 1330 -700 {lab=analog_2}
+N 700 -1130 1330 -1130 {lab=analog_1}
+N 2000 -440 2050 -440 {lab=DAC1_OUT[0]}
+N 2000 -460 2050 -460 {lab=DAC1_OUT[1]}
+N 2000 -480 2050 -480 {lab=DAC1_OUT[2]}
+N 2000 -500 2050 -500 {lab=DAC1_OUT[3]}
+N 2000 -540 2050 -540 {lab=DAC1_OUT[5]}
+N 2000 -520 2050 -520 {lab=DAC1_OUT[4]}
+N 2000 -560 2050 -560 {lab=DAC1_OUT[6]}
+N 2000 -580 2050 -580 {lab=DAC1_OUT[7]}
+N 2590 -820 2640 -820 {lab=DAC1_OUT[0]}
+N 2590 -840 2640 -840 {lab=DAC1_OUT[1]}
+N 2590 -860 2640 -860 {lab=DAC1_OUT[2]}
+N 2590 -880 2640 -880 {lab=DAC1_OUT[3]}
+N 2590 -920 2640 -920 {lab=DAC1_OUT[5]}
+N 2590 -900 2640 -900 {lab=DAC1_OUT[4]}
+N 2590 -940 2640 -940 {lab=DAC1_OUT[6]}
+N 2590 -960 2640 -960 {lab=DAC1_OUT[7]}
+N 2590 -1030 2640 -1030 {lab=DAC0_OUT[0]}
+N 2590 -1050 2640 -1050 {lab=DAC0_OUT[1]}
+N 2590 -1070 2640 -1070 {lab=DAC0_OUT[2]}
+N 2590 -1090 2640 -1090 {lab=DAC0_OUT[3]}
+N 2590 -1130 2640 -1130 {lab=DAC0_OUT[5]}
+N 2590 -1110 2640 -1110 {lab=DAC0_OUT[4]}
+N 2590 -1150 2640 -1150 {lab=DAC0_OUT[6]}
+N 2590 -1170 2640 -1170 {lab=DAC0_OUT[7]}
+N 2590 -1260 2640 -1260 {lab=SAR_SnH}
+N 2590 -1310 2640 -1310 {lab=SAR_DAC[0]}
+N 2590 -1330 2640 -1330 {lab=SAR_DAC[1]}
+N 2590 -1350 2640 -1350 {lab=SAR_DAC[2]}
+N 2590 -1370 2640 -1370 {lab=SAR_DAC[3]}
+N 2590 -1390 2640 -1390 {lab=SAR_DAC[4]}
+N 2590 -1410 2640 -1410 {lab=SAR_DAC[5]}
+N 2590 -1430 2640 -1430 {lab=SAR_DAC[6]}
+N 2590 -1450 2640 -1450 {lab=SAR_DAC[7]}
+N 2590 -1500 2640 -1500 {lab=SAR_COMP}
+N 2590 -1630 2640 -1630 {lab=rst_n}
+N 2590 -1610 2640 -1610 {lab=clk}
+N 2590 -1590 2640 -1590 {lab=ena}
+N 2820 -730 2820 -690 {lab=VGND}
+N 2820 -1710 2820 -1670 {lab=VPWR}
+N 3000 -1490 3050 -1490 {lab=SAR_DAC[0]}
+N 3000 -1510 3050 -1510 {lab=SAR_DAC[1]}
+N 3000 -1530 3050 -1530 {lab=SAR_DAC[2]}
+N 3000 -1550 3050 -1550 {lab=SAR_DAC[3]}
+N 3000 -1570 3050 -1570 {lab=SAR_DAC[4]}
+N 3000 -1590 3050 -1590 {lab=SAR_DAC[5]}
+N 3000 -1610 3050 -1610 {lab=SAR_DAC[6]}
+N 3000 -1630 3050 -1630 {lab=SAR_DAC[7]}
+N 3000 -1310 3050 -1310 {lab=SAR_DAC[0]}
+N 3000 -1330 3050 -1330 {lab=SAR_DAC[1]}
+N 3000 -1350 3050 -1350 {lab=SAR_DAC[2]}
+N 3000 -1370 3050 -1370 {lab=SAR_DAC[3]}
+N 3000 -1390 3050 -1390 {lab=SAR_DAC[4]}
+N 3000 -1410 3050 -1410 {lab=SAR_DAC[5]}
+N 3000 -1430 3050 -1430 {lab=SAR_DAC[6]}
+N 3000 -1450 3050 -1450 {lab=SAR_DAC[7]}
+N 3000 -1130 3050 -1130 {lab=SAR_DAC[0]}
+N 3000 -1150 3050 -1150 {lab=SAR_DAC[1]}
+N 3000 -1170 3050 -1170 {lab=SAR_DAC[2]}
+N 3000 -1190 3050 -1190 {lab=SAR_DAC[3]}
+N 3000 -1210 3050 -1210 {lab=SAR_DAC[4]}
+N 3000 -1230 3050 -1230 {lab=SAR_DAC[5]}
+N 3000 -1250 3050 -1250 {lab=SAR_DAC[6]}
+N 3000 -1270 3050 -1270 {lab=SAR_DAC[7]}
+N 3000 -950 3050 -950 {lab=SAR_DAC[0]}
+N 3000 -970 3050 -970 {lab=SAR_DAC[1]}
+N 3000 -990 3050 -990 {lab=SAR_DAC[2]}
+N 3000 -1010 3050 -1010 {lab=SAR_DAC[3]}
+N 3000 -1030 3050 -1030 {lab=SAR_DAC[4]}
+N 3000 -1050 3050 -1050 {lab=SAR_DAC[5]}
+N 3000 -1070 3050 -1070 {lab=SAR_DAC[6]}
+N 3000 -1090 3050 -1090 {lab=SAR_DAC[7]}
+N 3000 -770 3050 -770 {lab=SAR_DAC[0]}
+N 3000 -790 3050 -790 {lab=SAR_DAC[1]}
+N 3000 -810 3050 -810 {lab=SAR_DAC[2]}
+N 3000 -830 3050 -830 {lab=SAR_DAC[3]}
+N 3000 -850 3050 -850 {lab=SAR_DAC[4]}
+N 3000 -870 3050 -870 {lab=SAR_DAC[5]}
+N 3000 -890 3050 -890 {lab=SAR_DAC[6]}
+N 3000 -910 3050 -910 {lab=SAR_DAC[7]}
+C {title-2.sym} 0 0 0 0 {name=l1 author="B. L., G. B., T. M., P. G." rev=1.0 lock=true}
+C {555_comparator.sym} 1490 -2020 0 0 {name=x1}
+C {down_digital_translator.sym} 1810 -1960 0 0 {name=x2}
+C {ptat_curr_gen_mod1.sym} 590 -300 0 0 {name=x3}
+C {r2r_dac.sym} 1690 -1590 0 1 {name=x4}
+C {r2r_dac.sym} 1690 -970 0 1 {name=x5}
+C {8x_inverting_digital_level_translator.sym} 1980 -1450 0 1 {name=x6}
+C {8x_inverting_digital_level_translator.sym} 1980 -830 0 1 {name=x7}
+C {lab_pin.sym} 620 -460 1 0 {name=p1 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1410 -1850 1 0 {name=p2 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1530 -2120 1 0 {name=p2 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 580 -530 3 0 {name=p5 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 620 -260 3 0 {name=p5 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1410 -1660 3 0 {name=p6 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1530 -1930 3 0 {name=p6 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1770 -1650 3 0 {name=p7 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1890 -1920 3 0 {name=p7 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1640 -1820 1 0 {name=p10 sig_type=std_logic lab=VPWR
+C {lab_pin.sym} 1760 -2090 1 0 {name=p10 sig_type=std_logic lab=VPWR
 }
-C {lab_pin.sym} 1900 -1430 1 0 {name=p11 sig_type=std_logic lab=VPWR
+C {lab_pin.sym} 2020 -1700 1 0 {name=p11 sig_type=std_logic lab=VPWR
 }
-C {lab_pin.sym} 1900 -810 1 0 {name=p19 sig_type=std_logic lab=VPWR
+C {lab_pin.sym} 2020 -1080 1 0 {name=p19 sig_type=std_logic lab=VPWR
 }
-C {lab_pin.sym} 1640 -1430 1 0 {name=p20 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1760 -1700 1 0 {name=p20 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1640 -810 1 0 {name=p21 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1760 -1080 1 0 {name=p21 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1770 -1140 3 0 {name=p22 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1890 -1410 3 0 {name=p22 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1770 -520 3 0 {name=p23 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1890 -790 3 0 {name=p23 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1530 -1530 2 0 {name=p24 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1650 -1800 2 0 {name=p24 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1530 -910 2 0 {name=p67 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1650 -1180 2 0 {name=p67 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1530 -810 2 0 {name=p68 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1650 -1080 2 0 {name=p68 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1530 -1430 2 0 {name=p69 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1650 -1700 2 0 {name=p69 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 820 -680 2 0 {name=p70 sig_type=std_logic lab=iPBIAS
+C {lab_pin.sym} 890 -410 2 0 {name=p70 sig_type=std_logic lab=iPBIAS
 }
-C {op_amp_ver_2.sym} 730 -1770 0 0 {name=x8}
-C {lab_pin.sym} 740 -1890 1 0 {name=p71 sig_type=std_logic lab=VAPWR
+C {op_amp_ver_2.sym} 850 -2040 0 0 {name=x8}
+C {lab_pin.sym} 860 -2160 1 0 {name=p71 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 740 -1670 3 0 {name=p72 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 860 -1940 3 0 {name=p72 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 700 -1890 1 0 {name=p73 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 820 -2160 1 0 {name=p73 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 640 -530 3 0 {name=p74 sig_type=std_logic lab=iIREF1
+C {lab_pin.sym} 680 -260 3 0 {name=p74 sig_type=std_logic lab=iIREF1
 }
-C {lab_pin.sym} 680 -530 3 0 {name=p75 sig_type=std_logic lab=iIREF2
+C {lab_pin.sym} 720 -260 3 0 {name=p75 sig_type=std_logic lab=iIREF2
 
 }
-C {lab_pin.sym} 720 -530 3 0 {name=p76 sig_type=std_logic lab=iIREF3
+C {lab_pin.sym} 760 -260 3 0 {name=p76 sig_type=std_logic lab=iIREF3
 }
-C {lab_pin.sym} 700 -1670 3 0 {name=p77 sig_type=std_logic lab=iIREF1
+C {lab_pin.sym} 820 -1940 3 0 {name=p77 sig_type=std_logic lab=iIREF1
 }
-C {lab_pin.sym} 1530 -1480 2 0 {name=p78 sig_type=std_logic lab=iIREF2
+C {lab_pin.sym} 1650 -1750 2 0 {name=p78 sig_type=std_logic lab=iIREF2
 
 }
-C {lab_pin.sym} 1530 -860 2 0 {name=p79 sig_type=std_logic lab=iIREF3
+C {lab_pin.sym} 1650 -1130 2 0 {name=p79 sig_type=std_logic lab=iIREF3
 }
-C {sg13cmos5l_pr/rhigh.sym} 930 -670 0 0 {name=R1
+C {sg13cmos5l_pr/rhigh.sym} 1140 -380 0 0 {name=R1
 w=0.5e-6
 l=50e-6
 model=rhigh
@@ -257,7 +372,7 @@ b=0
   mm_ok=1
 value="expr_eng(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
 }
-C {sg13cmos5l_pr/rhigh.sym} 930 -550 0 0 {name=R2
+C {sg13cmos5l_pr/rhigh.sym} 1140 -260 0 0 {name=R2
 w=0.5e-6
 l=50e-6
 model=rhigh
@@ -268,7 +383,7 @@ b=0
   mm_ok=1
 value="expr_eng(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
 }
-C {sg13cmos5l_pr/cap_cmomi.sym} 1070 -550 0 0 {name=C1
+C {sg13cmos5l_pr/cap_cmomi.sym} 1280 -260 0 0 {name=C1
 model=cap_cmomi
 w=50e-6
 l=2e-6
@@ -280,66 +395,64 @@ m=1
 mm_ok=1
 spiceprefix=X
 }
-C {lab_pin.sym} 930 -750 1 0 {name=p80 sig_type=std_logic lab=VAPWR
+C {lab_pin.sym} 1140 -460 1 0 {name=p80 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 930 -480 3 0 {name=p81 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1140 -190 3 0 {name=p81 sig_type=std_logic lab=VGND
 }
-C {lab_pin.sym} 1100 -610 2 0 {name=p82 sig_type=std_logic lab=iVREF
+C {lab_pin.sym} 1310 -320 2 0 {name=p82 sig_type=std_logic lab=iVREF
 }
-C {lab_pin.sym} 1530 -880 2 0 {name=p83 sig_type=std_logic lab=iVREF
+C {lab_pin.sym} 1650 -1150 2 0 {name=p83 sig_type=std_logic lab=iVREF
 }
-C {lab_pin.sym} 1530 -1500 2 0 {name=p84 sig_type=std_logic lab=iVREF
+C {lab_pin.sym} 1650 -1770 2 0 {name=p84 sig_type=std_logic lab=iVREF
 }
-C {devices/iopin.sym} 580 -1750 2 0 {name=p85 lab=analog_0}
-C {devices/iopin.sym} 670 -860 2 0 {name=p86 lab=analog_1}
-C {lab_pin.sym} 1390 -1860 1 0 {name=p87 sig_type=std_logic lab=iPBIAS
+C {lab_pin.sym} 1510 -2130 1 0 {name=p87 sig_type=std_logic lab=iPBIAS
 }
-C {digital_level_translator.sym} 1850 -950 0 1 {name=x9}
-C {lab_pin.sym} 1650 -1090 1 0 {name=p88 sig_type=std_logic lab=VAPWR
+C {digital_level_translator.sym} 1970 -1220 0 1 {name=x9}
+C {lab_pin.sym} 1770 -1360 1 0 {name=p88 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1890 -1090 1 0 {name=p89 sig_type=std_logic lab=VPWR
+C {lab_pin.sym} 2010 -1360 1 0 {name=p89 sig_type=std_logic lab=VPWR
 }
-C {lab_pin.sym} 1770 -910 3 0 {name=p90 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1890 -1180 3 0 {name=p90 sig_type=std_logic lab=VGND
 }
-C {lab_wire.sym} 1200 -1730 0 0 {name=p91 sig_type=std_logic lab=iSAR_DAC}
-C {lab_wire.sym} 1610 -1750 0 0 {name=p92 sig_type=std_logic lab=iSAR_COMP}
-C {lab_wire.sym} 1200 -1770 0 0 {name=p93 sig_type=std_logic lab=iSAR_AN}
-C {devices/ipin.sym} 1930 -600 0 1 {name=p94 lab=DAC_OUT[0]
+C {lab_wire.sym} 1320 -2000 0 0 {name=p91 sig_type=std_logic lab=iSAR_DAC}
+C {lab_wire.sym} 1730 -2020 0 0 {name=p92 sig_type=std_logic lab=iSAR_COMP}
+C {lab_wire.sym} 1320 -2040 0 0 {name=p93 sig_type=std_logic lab=iSAR_AN}
+C {lab_pin.sym} 2050 -870 0 1 {name=p94 lab=DAC0_OUT[0]
 }
-C {devices/ipin.sym} 1930 -620 0 1 {name=p95 lab=DAC_OUT[1]
+C {lab_pin.sym} 2050 -890 0 1 {name=p95 lab=DAC0_OUT[1]
 }
-C {devices/ipin.sym} 1930 -640 0 1 {name=p96 lab=DAC_OUT[2]
+C {lab_pin.sym} 2050 -910 0 1 {name=p96 lab=DAC0_OUT[2]
 }
-C {devices/ipin.sym} 1930 -660 0 1 {name=p97 lab=DAC_OUT[3]
+C {lab_pin.sym} 2050 -930 0 1 {name=p97 lab=DAC0_OUT[3]
 }
-C {devices/ipin.sym} 1930 -680 0 1 {name=p98 lab=DAC_OUT[4]
+C {lab_pin.sym} 2050 -950 0 1 {name=p98 lab=DAC0_OUT[4]
 }
-C {devices/ipin.sym} 1930 -700 0 1 {name=p99 lab=DAC_OUT[5]
+C {lab_pin.sym} 2050 -970 0 1 {name=p99 lab=DAC0_OUT[5]
 }
-C {devices/ipin.sym} 1930 -720 0 1 {name=p100 lab=DAC_OUT[6]
+C {lab_pin.sym} 2050 -990 0 1 {name=p100 lab=DAC0_OUT[6]
 }
-C {devices/ipin.sym} 1930 -740 0 1 {name=p101 lab=DAC_OUT[7]
+C {lab_pin.sym} 2050 -1010 0 1 {name=p101 lab=DAC0_OUT[7]
 }
-C {devices/ipin.sym} 1930 -1220 0 1 {name=p102 lab=SAR_DAC[0]
+C {lab_pin.sym} 2050 -1490 0 1 {name=p102 lab=SAR_DAC[0]
 }
-C {devices/ipin.sym} 1930 -1240 0 1 {name=p103 lab=SAR_DAC[1]
+C {lab_pin.sym} 2050 -1510 0 1 {name=p103 lab=SAR_DAC[1]
 }
-C {devices/ipin.sym} 1930 -1260 0 1 {name=p104 lab=SAR_DAC[2]
+C {lab_pin.sym} 2050 -1530 0 1 {name=p104 lab=SAR_DAC[2]
 }
-C {devices/ipin.sym} 1930 -1280 0 1 {name=p105 lab=SAR_DAC[3]
+C {lab_pin.sym} 2050 -1550 0 1 {name=p105 lab=SAR_DAC[3]
 }
-C {devices/ipin.sym} 1930 -1300 0 1 {name=p106 lab=SAR_DAC[4]
+C {lab_pin.sym} 2050 -1570 0 1 {name=p106 lab=SAR_DAC[4]
 }
-C {devices/ipin.sym} 1930 -1320 0 1 {name=p107 lab=SAR_DAC[5]
+C {lab_pin.sym} 2050 -1590 0 1 {name=p107 lab=SAR_DAC[5]
 }
-C {devices/ipin.sym} 1930 -1340 0 1 {name=p108 lab=SAR_DAC[6]
+C {lab_pin.sym} 2050 -1610 0 1 {name=p108 lab=SAR_DAC[6]
 }
-C {devices/ipin.sym} 1930 -1360 0 1 {name=p109 lab=SAR_DAC[7]
+C {lab_pin.sym} 2050 -1630 0 1 {name=p109 lab=SAR_DAC[7]
 }
-C {devices/opin.sym} 1930 -1750 0 0 {name=p110 lab=SAR_COMP}
-C {devices/ipin.sym} 1940 -1010 0 1 {name=p111 lab=SAR_SnH
+C {lab_pin.sym} 2050 -2020 2 0 {name=p110 lab=SAR_COMP}
+C {lab_pin.sym} 2060 -1280 0 1 {name=p111 lab=SAR_SnH
 }
-C {lab_pin.sym} 1070 -480 3 0 {name=p8 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1280 -190 3 0 {name=p8 sig_type=std_logic lab=VGND
 }
 C {devices/ipin.sym} 160 -1280 2 1 {name=p30 lab=rst_n}
 C {devices/ipin.sym} 160 -1260 2 1 {name=p31 lab=clk}
@@ -398,8 +511,184 @@ C {conn_3x1.sym} 220 -280 0 1 {name=c10 footprint=connector(3,1)}
 C {devices/iopin.sym} 160 -300 2 0 {name=p65 lab=analog_2}
 C {devices/iopin.sym} 160 -280 2 0 {name=p66 lab=analog_1}
 C {devices/iopin.sym} 160 -260 2 0 {name=p115 lab=analog_0}
-C {sample_and_hold.sym} 940 -1740 0 0 {name=x10}
-C {lab_pin.sym} 1020 -1850 1 0 {name=p61 sig_type=std_logic lab=VAPWR
+C {sample_and_hold.sym} 1060 -2010 0 0 {name=x10}
+C {lab_pin.sym} 1140 -2120 1 0 {name=p61 sig_type=std_logic lab=VAPWR
 }
-C {lab_pin.sym} 1020 -1660 3 0 {name=p62 sig_type=std_logic lab=VGND
+C {lab_pin.sym} 1140 -1930 3 0 {name=p62 sig_type=std_logic lab=VGND
+}
+C {r2r_dac.sym} 1690 -540 0 1 {name=x11}
+C {8x_inverting_digital_level_translator.sym} 1980 -400 0 1 {name=x12}
+C {lab_pin.sym} 2020 -650 1 0 {name=p63 sig_type=std_logic lab=VPWR
+}
+C {lab_pin.sym} 1760 -650 1 0 {name=p64 sig_type=std_logic lab=VAPWR
+}
+C {lab_pin.sym} 1890 -360 3 0 {name=p112 sig_type=std_logic lab=VGND
+}
+C {lab_pin.sym} 1650 -750 2 0 {name=p113 sig_type=std_logic lab=VAPWR
+}
+C {lab_pin.sym} 1650 -650 2 0 {name=p114 sig_type=std_logic lab=VGND
+}
+C {lab_pin.sym} 1650 -700 2 0 {name=p116 sig_type=std_logic lab=iIREF4}
+C {lab_pin.sym} 1650 -720 2 0 {name=p117 sig_type=std_logic lab=iVREF
+}
+C {lab_pin.sym} 700 -2020 0 0 {name=p119 sig_type=std_logic lab=analog_0
+}
+C {lab_pin.sym} 700 -1130 0 0 {name=p85 sig_type=std_logic lab=analog_1}
+C {lab_pin.sym} 700 -700 0 0 {name=p86 sig_type=std_logic lab=analog_2}
+C {lab_pin.sym} 800 -260 3 0 {name=p118 sig_type=std_logic lab=iIREF4
+}
+C {lab_pin.sym} 2050 -440 0 1 {name=p120 lab=DAC1_OUT[0]
+}
+C {lab_pin.sym} 2050 -460 0 1 {name=p121 lab=DAC1_OUT[1]
+}
+C {lab_pin.sym} 2050 -480 0 1 {name=p122 lab=DAC1_OUT[2]
+}
+C {lab_pin.sym} 2050 -500 0 1 {name=p123 lab=DAC1_OUT[3]
+}
+C {lab_pin.sym} 2050 -520 0 1 {name=p124 lab=DAC1_OUT[4]
+}
+C {lab_pin.sym} 2050 -540 0 1 {name=p125 lab=DAC1_OUT[5]
+}
+C {lab_pin.sym} 2050 -560 0 1 {name=p126 lab=DAC1_OUT[6]
+}
+C {lab_pin.sym} 2050 -580 0 1 {name=p127 lab=DAC1_OUT[7]
+}
+C {digital_logic.sym} 2820 -1330 0 0 {name=x13}
+C {lab_pin.sym} 2590 -820 0 0 {name=p128 lab=DAC1_OUT[0]
+}
+C {lab_pin.sym} 2590 -840 0 0 {name=p129 lab=DAC1_OUT[1]
+}
+C {lab_pin.sym} 2590 -860 0 0 {name=p130 lab=DAC1_OUT[2]
+}
+C {lab_pin.sym} 2590 -880 0 0 {name=p131 lab=DAC1_OUT[3]
+}
+C {lab_pin.sym} 2590 -900 0 0 {name=p132 lab=DAC1_OUT[4]
+}
+C {lab_pin.sym} 2590 -920 0 0 {name=p133 lab=DAC1_OUT[5]
+}
+C {lab_pin.sym} 2590 -940 0 0 {name=p134 lab=DAC1_OUT[6]
+}
+C {lab_pin.sym} 2590 -960 0 0 {name=p135 lab=DAC1_OUT[7]
+}
+C {lab_pin.sym} 2590 -1030 0 0 {name=p136 lab=DAC0_OUT[0]
+}
+C {lab_pin.sym} 2590 -1050 0 0 {name=p137 lab=DAC0_OUT[1]
+}
+C {lab_pin.sym} 2590 -1070 0 0 {name=p138 lab=DAC0_OUT[2]
+}
+C {lab_pin.sym} 2590 -1090 0 0 {name=p139 lab=DAC0_OUT[3]
+}
+C {lab_pin.sym} 2590 -1110 0 0 {name=p140 lab=DAC0_OUT[4]
+}
+C {lab_pin.sym} 2590 -1130 0 0 {name=p141 lab=DAC0_OUT[5]
+}
+C {lab_pin.sym} 2590 -1150 0 0 {name=p142 lab=DAC0_OUT[6]
+}
+C {lab_pin.sym} 2590 -1170 0 0 {name=p143 lab=DAC0_OUT[7]
+}
+C {lab_pin.sym} 2590 -1260 0 0 {name=p144 lab=SAR_SnH
+}
+C {lab_pin.sym} 2590 -1310 0 0 {name=p145 lab=SAR_DAC[0]
+}
+C {lab_pin.sym} 2590 -1330 0 0 {name=p146 lab=SAR_DAC[1]
+}
+C {lab_pin.sym} 2590 -1350 0 0 {name=p147 lab=SAR_DAC[2]
+}
+C {lab_pin.sym} 2590 -1370 0 0 {name=p148 lab=SAR_DAC[3]
+}
+C {lab_pin.sym} 2590 -1390 0 0 {name=p149 lab=SAR_DAC[4]
+}
+C {lab_pin.sym} 2590 -1410 0 0 {name=p150 lab=SAR_DAC[5]
+}
+C {lab_pin.sym} 2590 -1430 0 0 {name=p151 lab=SAR_DAC[6]
+}
+C {lab_pin.sym} 2590 -1450 0 0 {name=p152 lab=SAR_DAC[7]
+}
+C {lab_pin.sym} 2590 -1500 2 1 {name=p153 lab=SAR_COMP}
+C {lab_pin.sym} 2590 -1590 2 1 {name=p154 lab=ena}
+C {lab_pin.sym} 2590 -1610 2 1 {name=p155 lab=clk}
+C {lab_pin.sym} 2590 -1630 2 1 {name=p156 lab=rst_n}
+C {lab_pin.sym} 2820 -690 3 0 {name=p157 sig_type=std_logic lab=VGND
+}
+C {lab_pin.sym} 2820 -1710 1 0 {name=p158 sig_type=std_logic lab=VPWR
+}
+C {lab_pin.sym} 3050 -1490 0 1 {name=p160 lab=uio_out[0]
+}
+C {lab_pin.sym} 3050 -1510 0 1 {name=p161 lab=uio_out[1]
+}
+C {lab_pin.sym} 3050 -1530 0 1 {name=p162 lab=uio_out[2]
+}
+C {lab_pin.sym} 3050 -1550 0 1 {name=p163 lab=uio_out[3]
+}
+C {lab_pin.sym} 3050 -1570 0 1 {name=p164 lab=uio_out[4]
+}
+C {lab_pin.sym} 3050 -1590 0 1 {name=p165 lab=uio_out[5]
+}
+C {lab_pin.sym} 3050 -1610 0 1 {name=p166 lab=uio_out[6]
+}
+C {lab_pin.sym} 3050 -1630 0 1 {name=p167 lab=uio_out[7]
+}
+C {lab_pin.sym} 3050 -1310 0 1 {name=p159 lab=uo_out[0]
+}
+C {lab_pin.sym} 3050 -1330 0 1 {name=p168 lab=uo_out[1]
+}
+C {lab_pin.sym} 3050 -1350 0 1 {name=p169 lab=uo_out[2]
+}
+C {lab_pin.sym} 3050 -1370 0 1 {name=p170 lab=uo_out[3]
+}
+C {lab_pin.sym} 3050 -1390 0 1 {name=p171 lab=uo_out[4]
+}
+C {lab_pin.sym} 3050 -1410 0 1 {name=p172 lab=uo_out[5]
+}
+C {lab_pin.sym} 3050 -1430 0 1 {name=p173 lab=uo_out[6]
+}
+C {lab_pin.sym} 3050 -1450 0 1 {name=p174 lab=uo_out[7]
+}
+C {lab_pin.sym} 3050 -1130 0 1 {name=p175 lab=uio_oe[0]
+}
+C {lab_pin.sym} 3050 -1150 0 1 {name=p176 lab=uio_oe[1]
+}
+C {lab_pin.sym} 3050 -1170 0 1 {name=p177 lab=uio_oe[2]
+}
+C {lab_pin.sym} 3050 -1190 0 1 {name=p178 lab=uio_oe[3]
+}
+C {lab_pin.sym} 3050 -1210 0 1 {name=p179 lab=uio_oe[4]
+}
+C {lab_pin.sym} 3050 -1230 0 1 {name=p180 lab=uio_oe[5]
+}
+C {lab_pin.sym} 3050 -1250 0 1 {name=p181 lab=uio_oe[6]
+}
+C {lab_pin.sym} 3050 -1270 0 1 {name=p182 lab=uio_oe[7]
+}
+C {lab_pin.sym} 3050 -950 0 1 {name=p183 lab=ui_in[0]
+}
+C {lab_pin.sym} 3050 -970 0 1 {name=p184 lab=ui_in[1]
+}
+C {lab_pin.sym} 3050 -990 0 1 {name=p185 lab=ui_in[2]
+}
+C {lab_pin.sym} 3050 -1010 0 1 {name=p186 lab=ui_in[3]
+}
+C {lab_pin.sym} 3050 -1030 0 1 {name=p187 lab=ui_in[4]
+}
+C {lab_pin.sym} 3050 -1050 0 1 {name=p188 lab=ui_in[5]
+}
+C {lab_pin.sym} 3050 -1070 0 1 {name=p189 lab=ui_in[6]
+}
+C {lab_pin.sym} 3050 -1090 0 1 {name=p190 lab=ui_in[7]
+}
+C {lab_pin.sym} 3050 -770 0 1 {name=p191 lab=uio_in[0]
+}
+C {lab_pin.sym} 3050 -790 0 1 {name=p192 lab=uio_in[1]
+}
+C {lab_pin.sym} 3050 -810 0 1 {name=p193 lab=uio_in[2]
+}
+C {lab_pin.sym} 3050 -830 0 1 {name=p194 lab=uio_in[3]
+}
+C {lab_pin.sym} 3050 -850 0 1 {name=p195 lab=uio_in[4]
+}
+C {lab_pin.sym} 3050 -870 0 1 {name=p196 lab=uio_in[5]
+}
+C {lab_pin.sym} 3050 -890 0 1 {name=p197 lab=uio_in[6]
+}
+C {lab_pin.sym} 3050 -910 0 1 {name=p198 lab=uio_in[7]
 }
