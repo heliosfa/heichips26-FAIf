@@ -48,9 +48,9 @@ architecture bench of ana_comp_tb is
 
   -- Reference voltage source
   constant N_REF       : integer      := 2**4;  -- number of voltage steps
-  constant V_REF_START : real         := V_DD / real(N_REF + 1);  -- start voltage / V
+  constant DV_REF      : real         := V_DD / real(N_REF + 1);  -- reference voltage step / V
+  constant V_REF_START : real         := DV_REF / 2.0;  -- start voltage / V
   constant V_REF_STOP  : real         := V_DD - V_REF_START;  -- stop voltage / V
-  constant DV_REF      : real         := (V_REF_STOP - V_REF_START) / real(N_REF - 1);  -- reference voltage step / V
   constant DT_REF_STEP : delay_length := PERIOD_IN * 1 sec;  -- time per step / s
 
   -- component ports
