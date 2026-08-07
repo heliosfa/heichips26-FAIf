@@ -12,21 +12,23 @@ module heichips26_FAIf_tb;
   localparam real CLK_PERIOD_NS = 1e9 / CLK_FREQ;
 
   // Signals
-  logic         clk       = 1'b0;
-  logic         rst_n     = 1'b1; // active-low reset
-  logic         adc_clear = 1'b0;
-  logic         adc_ena   = 1'b0;
-  logic         adc_start = 1'b0;
+  logic         clk           = 1'b0;
+  logic         rst_n         = 1'b1; // active-low reset
+  logic         adc_clear     = 1'b0;
+  logic         adc_ena       = 1'b0;
+  logic         adc_start     = 1'b0;
   logic         adc_done, adc_tick;
   //logic         adc_hold;
   logic [7:0]   adc_value;
   logic [7:0]   adc_ref_out;
   //logic         adc_comp;
 
-  logic [7:0]   dac_in    = 8'b0;
-  logic         dac_sel   = 1'b0;
-  logic         dac_load  = 1'b0;
+  logic [7:0]   dac_in        = 8'b0;
+  logic         dac_sel       = 1'b0;
+  logic         dac_load      = 1'b0;
   logic [15:0]  dac_out;
+
+  logic         load_config   = 1'b0;
 
   // Stadard port names
   logic [7:0] ui_in;
@@ -46,8 +48,9 @@ module heichips26_FAIf_tb;
   assign adc_value = uo_out;
   
   assign ui_in = dac_in;
-  assign uio_in[6] = dac_sel;
-  assign uio_in[7] = dac_load;
+  assign uio_in[5] = dac_sel;
+  assign uio_in[6] = dac_load;
+  assign uio_in[7] = load_config;
 
   // DUT
   heichips26_FAIf dut_heichips26_FAIf (

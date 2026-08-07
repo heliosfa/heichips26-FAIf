@@ -25,7 +25,7 @@ module heichips26_FAIf (
 );
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, uio_in[5:3]};
+    wire _unused = &{ena, uio_in[4:3]};
 
 
     logic adc_clear, adc_ena, adc_start;
@@ -38,6 +38,8 @@ module heichips26_FAIf (
     logic [7:0] dac_in;
     logic dac_sel, dac_load;
     logic [15:0] dac_out;
+
+    logic load_config;
 
     // Instanciate the DAC Register
     dac_reg dac_reg_instance (
@@ -82,9 +84,10 @@ module heichips26_FAIf (
     assign uo_out = adc_value;
     
     assign dac_in = ui_in;
-    assign dac_sel = uio_in[6];
-    assign dac_load = uio_in[7];
+    assign dac_sel = uio_in[5];
+    assign dac_load = uio_in[6];
+    assign load_config = uio_in[7];
 
-    assign uio_oe  = '1;
+    assign uio_oe  = 8'b00011000;
 
 endmodule
