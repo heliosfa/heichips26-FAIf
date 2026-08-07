@@ -6,5 +6,5 @@
 SRC_DIR := ../../../rtl
 
 DUT_SRCS := \
-	$(SRC_DIR)/dac_reg.v \
+	$(SRC_DIR)/gen/dac_reg.v \
 	$(SRC_DIR)/heichips26_FAIf.sv
