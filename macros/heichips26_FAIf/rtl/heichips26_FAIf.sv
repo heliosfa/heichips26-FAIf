@@ -25,24 +25,56 @@ module heichips26_FAIf (
 );
 
     // List all unused inputs to prevent warnings
-    wire _unused = &{ena, ui_in[7:1], uio_in[7:1]};
-    
-    logic [7:0] count;
-    
-    counter counter_0 (
-    `ifdef USE_POWER_PINS
-        .VPWR  (VPWR),
-        .VGND  (VGND),
-    `endif
-        .clk_i    (clk),
-        .rst_ni   (rst_n),
-        .enable_i (ui_in[0]),
+    wire _unused = &{ena, uio_in[5:3]};
 
-        .count_o  (count)
+
+    logic adc_clear, adc_ena, adc_start;
+    logic adc_done, adc_tick;
+    logic adc_hold;
+    logic [7:0] adc_value;
+    logic [7:0] adc_ref_out;
+    logic adc_comp;
+
+    logic [7:0] dac_in;
+    logic dac_sel, dac_load;
+    logic [15:0] dac_out;
+
+    // Instanciate the DAC Register
+    dac_reg dac_reg_instance (
+        .clk(clk),
+        .reset_n(rst_n),
+        .dac_in(dac_in),
+        .dac_sel(dac_sel),
+        .dac_load(dac_load),
+        .dac_out(dac_out)
     );
+
+    sar sar_instance (
+        .clk(clk),
+        .rst_n(rst_n),
+        .clear(adc_clear),
+        .ena(adc_ena),
+        .start(adc_start),
+        .done(adc_done),
+        .tick(adc_tick),
+        .value(adc_value),
+        .hold(adc_hold),
+        .ref_out(adc_ref_out),
+        .comp(adc_comp)
+    );
+
+    assign adc_clear = uio_in[0];
+    assign adc_ena = uio_in[1];
+    assign adc_start = uio_in[2];
     
-    assign uo_out  = count;
-    assign uio_out = count;
+    assign uio_out[3] = adc_done;
+    assign uio_out[4] = adc_tick;
+    assign uo_out = adc_value;
+    
+    assign dac_in = ui_in;
+    assign dac_sel = uio_in[6];
+    assign dac_load = uio_in[7];
+
     assign uio_oe  = '1;
 
 endmodule
