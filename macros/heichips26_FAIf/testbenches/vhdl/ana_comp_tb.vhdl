@@ -7,8 +7,8 @@
 -- Company    : BFH-EIT
 -- Created    : 2026-08-07
 -- Last update: 2026-08-07
--- Platform   : Intel Quartus Prime 18.1
--- Standard   : VHDL'93/02, Math Packages
+-- Platform   : GHDL
+-- Standard   : VHDL-2008
 -------------------------------------------------------------------------------
 -- Description: 
 -------------------------------------------------------------------------------

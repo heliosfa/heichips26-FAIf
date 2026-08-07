@@ -7,12 +7,12 @@
 -- Company    : BFH-EIT
 -- Created    : 2026-08-06
 -- Last update: 2026-08-06
--- Platform   : Intel Quartus Prime 18.1
--- Standard   : VHDL'93/02, Math Packages
+-- Platform   : GHDL
+-- Standard   : VHDL-1993
 -------------------------------------------------------------------------------
 -- Description:
 -------------------------------------------------------------------------------
--- Copyright (c) 2026 BFH-EIT
+-- Copyright (c) 2026 HeiChips 2026 FAIf team
 -------------------------------------------------------------------------------
 -- Revisions  :
 -- Date        Version  Author  Description
