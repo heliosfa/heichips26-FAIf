@@ -42,14 +42,14 @@ Preliminary pinout for the FPGA interface:
   </tr>
   <tr>
     <td>uio_in</td>
+    <td>DAC<br>Load</td>
+    <td>--DAC<br>H/L--</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td>ADC<br>Rst</td>
     <td>ADC<br>Start</td>
-    <td>DAC <br>Load</td>
-    <td>DAC<br>H/L</td>
+    <td>ADC<br>Ena</td>
+    <td>ADC<br>Clear</td>
   </tr>
   <tr>
     <td>uo_out</td>
@@ -59,16 +59,16 @@ Preliminary pinout for the FPGA interface:
     <td>uio_out</td>
     <td></td>
     <td></td>
-    <td>ADC<br>Tick</td>
-    <td>ADC<br>End</td>
     <td></td>
+    <td>ADC<br>Tick</td>
+    <td>ADC<br>Done</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>uio_oe</td>
-    <td colspan="8">ADC LSB</td>
+    <td colspan="8">--ADC LSB--</td>
   </tr>
 </tbody>
 </table>
