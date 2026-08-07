@@ -43,7 +43,7 @@ Preliminary pinout for the FPGA interface:
   <tr>
     <td>uio_in</td>
     <td>DAC<br>Load</td>
-    <td>--DAC<br>H/L--</td>
+    <td>DAC<br>Sel</td>
     <td></td>
     <td></td>
     <td></td>
