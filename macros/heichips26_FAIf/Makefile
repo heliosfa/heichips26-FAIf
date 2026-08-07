@@ -6,7 +6,7 @@ MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 RUN_TAG = $(shell ls -1 $(LIBRELANE_DIR)/runs 2>/dev/null | tail -n 1)
 
 # Variables
-TOP = heichips26_digital_project
+TOP = heichips26_FAIf
 
 .DEFAULT_GOAL := help
 

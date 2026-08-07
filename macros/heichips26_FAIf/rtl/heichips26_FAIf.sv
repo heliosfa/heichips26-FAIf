@@ -67,7 +67,10 @@ module heichips26_FAIf (
         .adc_ref(adc_ref_out),
         .adc_hold(adc_hold),
         .adc_comp(adc_comp),
-        .dac_out(dac_out)
+        .dac_out(dac_out),
+        .analog_0(analog_0),
+        .analog_1(analog_1),
+        .analog_2(analog_2)
     );
 
     assign adc_clear = uio_in[0];
