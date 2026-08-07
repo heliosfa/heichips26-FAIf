@@ -1,0 +1,12 @@
+** sch_path: /home/benedikt/heichips26-FAIf/macros/heichips26_analog_project/macros/aswitch/schematic/xschem/aswitch.sch
+**.subckt aswitch sw_b VDD b a VSS sw
+*.iopin a
+*.iopin sw_b
+*.iopin b
+*.iopin sw
+*.iopin VDD
+*.iopin VSS
+XM1 a sw b VSS sg13_hv_nmos w=3u l=0.6u ng=1 m=1 mm_ok=1
+XM2 a sw_b b VDD sg13_hv_pmos w=6u l=0.6u ng=2 m=1 mm_ok=1
+**.ends
+.end

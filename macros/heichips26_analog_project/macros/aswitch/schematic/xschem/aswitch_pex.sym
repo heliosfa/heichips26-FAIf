@@ -1,0 +1,37 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -30 0 30 -20 {}
+L 4 -0 -30 -0 -10 {}
+L 4 -50 -0 -30 -0 {}
+L 4 30 -0 50 -0 {}
+L 7 0 30 0 50 {}
+L 7 50 0 70 0 {}
+L 7 -70 0 -50 0 {}
+L 7 0 -50 0 -30 {}
+L 7 50 -50 50 -30 {}
+L 7 50 30 50 50 {}
+B 5 -2.5 47.5 2.5 52.5 {name=sw_b dir=inout}
+B 5 47.5 -52.5 52.5 -47.5 {name=VDD dir=inout}
+B 5 67.5 -2.5 72.5 2.5 {name=b dir=inout}
+B 5 -72.5 -2.5 -67.5 2.5 {name=a dir=inout}
+B 5 47.5 47.5 52.5 52.5 {name=VSS dir=inout}
+B 5 -2.5 -52.5 2.5 -47.5 {name=sw dir=inout}
+T {@symname} -75 -26 0 0 0.2 0.2 {}
+T {@name} -75 18 0 0 0.2 0.2 {}
+T {sw_b} -6 55 1 1 0.2 0.2 {}
+T {VDD} 56 -45 3 1 0.2 0.2 {}
+T {b} 65 -14 0 1 0.2 0.2 {}
+T {a} -55 -14 0 1 0.2 0.2 {}
+T {VSS} 64 45 1 1 0.2 0.2 {}
+T {sw} -14 -45 3 1 0.2 0.2 {}
+T {1k nom
+} -60 -40 0 0 0.2 0.2 {}
