@@ -54,18 +54,18 @@ entity sar is
     NBITS : positive := 8);             -- SAR register width
 
   port (
-    clk   : in  std_logic;              -- clock input
-    rst_n : in  std_logic;              -- low-active asynchronous reset
-    clear : in  std_logic;              -- high-active synchronous clear
-    ena   : in  std_logic;              -- enable input
-    start : in  std_logic;              -- start conversion
-    done  : out std_logic;              -- conversion done
-    tick  : out std_logic;  -- one clock cycle pulse at end of conversion
-    value : out std_logic_vector(NBITS-1 downto 0);   -- conversion value
+    clk      : in  std_logic;              -- clock input
+    rst_n    : in  std_logic;              -- low-active asynchronous reset
+    clear    : in  std_logic;              -- high-active synchronous clear
+    ena      : in  std_logic;              -- enable input
+    start    : in  std_logic;              -- start conversion
+    done     : out std_logic;              -- conversion done
+    tick     : out std_logic;  -- one clock cycle pulse at end of conversion
+    value    : out std_logic_vector(NBITS-1 downto 0);   -- conversion value
     -- Interface to the analogue domain -> requires level conversion
-    hold  : out std_logic;              -- activates the sample & hold block
-    ref   : out std_logic_vector(NBITS-1 downto 0);   -- reference value for DAC
-    comp  : in  std_logic);             -- input from the analogue comparator
+    hold     : out std_logic;              -- activates the sample & hold block
+    ref_out  : out std_logic_vector(NBITS-1 downto 0);   -- reference value for DAC
+    comp     : in  std_logic);             -- input from the analogue comparator
 
 end entity sar;
 
@@ -138,7 +138,7 @@ begin  -- architecture rtl
   value <= value_reg;
   hold <= '1' when mask_reg /= MASK_ZERO else
           '0';
-  ref   <= value_reg;
+  ref_out   <= value_reg;
 
 end architecture rtl;
 
