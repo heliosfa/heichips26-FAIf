@@ -12,7 +12,9 @@ meta:
     Checker.IllegalOverlap: null
 
 DESIGN_NAME: heichips26_FAIf
-VERILOG_FILES: dir::../../rtl/*.sv
+VERILOG_FILES: 
+  - dir::../../rtl/*.sv
+  - dir::../../rtl/gen/*.v
 CLOCK_PORT: clk
 CLOCK_NET: clk
 CLOCK_PERIOD: 10 # 10ns = 100MHz
@@ -52,24 +54,4 @@ PDN_HORIZONTAL_LAYER: Metal3
 #USE_SLANG: true
 
 MACROS:
-  counter:
-    gds:
-      - dir::../../macros/counter/final/gds/counter.gds
-    lef:
-      - dir::../../macros/counter/final/lef/counter.lef
-    vh:
-      - dir::../../macros/counter/final/vh/counter.vh
-    lib:
-      nom_typ_1p20V_25C:
-        - dir::../../macros/counter/final/lib/nom_typ_1p20V_25C/counter__nom_typ_1p20V_25C.lib
-      nom_fast_1p32V_m40C:
-        - dir::../../macros/counter/final/lib/nom_fast_1p32V_m40C/counter__nom_fast_1p32V_m40C.lib
-      nom_slow_1p08V_125C:
-        - dir::../../macros/counter/final/lib/nom_slow_1p08V_125C/counter__nom_slow_1p08V_125C.lib
-    spef:
-      nom:
-        - dir::../../macros/counter/final/spef/nom/counter.nom.spef
-    instances:
-      counter_0:
-        location: [100, 50]
-        orientation: N
+

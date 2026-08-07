@@ -7,7 +7,7 @@ module analogue_interface (
 
     input  logic [15:0] dac_out,     // DAC output
 
-    wire         analog_0, analog_1, analog_2    // Analogue pins
+    output wire         analog_0, analog_1, analog_2    // Analogue pins
 );
 
 endmodule
