@@ -7,10 +7,10 @@ PDK_ROOT ?= $(MAKEFILE_DIR)/IHP-Open-PDK
 PDK ?= ihp-sg13cmos5l
 
 PDK_REPO_IHP_OPEN_PDK ?= https://github.com/iic-jku/IHP-Open-PDK.git
-PDK_COMMIT_IHP_OPEN_PDK ?= db70c13aa5dfe1dec1d286581fd1b9a2807ca331
+PDK_COMMIT_IHP_OPEN_PDK ?= 90f04eafe3c6411800372ccb03c9a8a8b7a3898e
 
 PDK_REPO_IHP_CMOS5L ?= https://github.com/iic-jku/ihp-sg13cmos5l.git
-PDK_COMMIT_IHP_CMOS5L ?= 11d3fee24f00d9117fe5e36aaf60c2ff141c70b3
+PDK_COMMIT_IHP_CMOS5L ?= 0d622eabd6fe96d5a7eab765db882a367a75cf8d
 
 KLAYOUT_PLUGINS = KLayoutPluginUtils \
                   AlignToolPlugin \
