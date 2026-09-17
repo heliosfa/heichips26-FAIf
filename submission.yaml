@@ -16,20 +16,24 @@ short-description: Analogue mixed-signal peripherals
 # If your project requires additional external hardware, e.g. a USB port,
 # please mention this so we can consider it when designing the HeiChips PCB.
 long-description: |
-  Is this thing on?
+  HeiChips 2026 FABulous Analogue Interface
+
+  This repository is the fork of the HeiChips 2026 submission template for the analogue peripherals project at the HeiChips 2026 Hackathon.
+  This project is implemented as a digital-on-top design with the following peripherals:
   
-  This is a super cool project 👏
-  
-  * with
-  * bullet
-  * points
+  * 16-bit DAC
+  * 16-bit ADC
+  * DDS
+
+  The project makes use of three dedicated analogue pins and uses the small tile size.
   
   **nice** *formatting* and [links](https://heichips.github.io/).
+  Repository: https://github.com/heliosfa/heichips26-FAIf
 
 # These paths are used to verify your
 # submission during the precheck.
 # Wildcards are allowed, but there
 # should only be a single match.
-gds-path: macros/heichips26_digital_project/final/gds/*.gds
-lef-path: macros/heichips26_digital_project/final/lef/*.lef
-header-path: macros/heichips26_digital_project/final/vh/*.vh
+gds-path: macros/heichips26_FAIf/final/gds/*.gds
+lef-path: macros/heichips26_FAIf/final/lef/*.lef
+header-path: macros/heichips26_FAIf/final/vh/*.vh
